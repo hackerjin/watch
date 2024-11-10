@@ -36,3 +36,5 @@ watch\spi.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
 watch\spi.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 watch\spi.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 watch\spi.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+watch\spi.o: ..\Drivers\BSP\spi.h
+watch\spi.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdbool.h

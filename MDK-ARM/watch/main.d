@@ -48,3 +48,9 @@ watch\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
 watch\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
 watch\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
 watch\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
+watch\main.o: ..\Drivers\BSP\lcd.h
+watch\main.o: ../Core/Inc/sys.h
+watch\main.o: ..\Drivers\BSP\lcd_init.h
+watch\main.o: ../Core/Inc/delay.h
+watch\main.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdio.h
+watch\main.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdbool.h

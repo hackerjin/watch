@@ -1,42 +1,90 @@
 #include "main.h"
 #include "cmsis_os.h"
-
-
+#include "lcd.h"
+#include "lcd_init.h"
+#include "sys.h"
+#include "delay.h"
+#include <stdio.h>
+#include <stdbool.h>
 
 void SystemClock_Config(void);
 void MX_ADC1_Init(void);
 void MX_RTC_Init(void);
 void MX_TIM3_Init(void);
-void MX_SPI1_Init(void);
+bool MX_SPI1_Init(void);
 void MX_USART1_UART_Init(void);
 
+
+osThreadId_t HardwareInitTaskHandle;
+const osThreadAttr_t HardwareInitTask_attributes = {
+  .name = "HardwareInitTask",
+  .stack_size = 128 * 10,
+  .priority = (osPriority_t) osPriorityHigh3,
+};
+
+
+
+void HardwareInitTask(void *argument)
+{
+    
+
+    
+    
+}
+
+void tasks_init()
+{
+    HardwareInitTaskHandle  = osThreadNew(HardwareInitTask, NULL, &HardwareInitTask_attributes);
+    
+}
 
 int main(void)
 {
 
-
-  HAL_Init();
-
- 
-  SystemClock_Config();
-
-  MX_ADC1_Init();
-  MX_RTC_Init();
-  MX_TIM3_Init();
-  MX_SPI1_Init();
-  MX_USART1_UART_Init();
- 
-  osKernelInitialize();
+    SCB->VTOR = 0x00000000U;
+    HAL_Init();
 
 
+    SystemClock_Config();
+    
+    __enable_irq();
+    
+    MX_ADC1_Init();
+    MX_RTC_Init();
+    MX_TIM3_Init();
+    
+    MX_USART1_UART_Init();
+    
+    //osKernelInitialize();
+    delay_init();
+    if(MX_SPI1_Init() == HAL_OK)
+    {
+        while(1)
+        {
+        LCD_Open_Light();
+       
+       
+        LCD_Init();
+        LCD_Fill(0,0, LCD_W, LCD_H, BLACK);
+        delay_ms(10);
+        LCD_Set_Light(50);
+        LCD_ShowString(72,LCD_H/2,(uint8_t*)"Welcome!", WHITE, BLACK, 24, 0);//12*6,16*8,24*12,32*16
+        uint8_t lcd_buf_str[17];
+        sprintf(lcd_buf_str, "OV-Watch V%d.%d.%d", 1, 1, 1);
+        LCD_ShowString(34, LCD_H/2+48, (uint8_t*)lcd_buf_str, WHITE, BLACK, 24, 0);
+        delay_ms(1000);
+        LCD_Fill(0, LCD_H/2-24, LCD_W, LCD_H/2+49, BLACK);
+            
+        }
+    }
+    
+    
+    //osKernelStart();
+    
+    while (1)
+    {
 
-
-  osKernelStart();
-
-  while (1)
-  {
-  
-  }
+    }
 
 }
 
@@ -75,12 +123,6 @@ void SystemClock_Config(void)
 
   HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_3);
 }
-
-
-
-
-
-
 
 
 
