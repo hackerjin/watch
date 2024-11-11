@@ -652,6 +652,13 @@
         </Group>
         <Group>
           <GroupName>Application/Tasks</GroupName>
+          <Files>
+            <File>
+              <FileName>hardware_init.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Tasks\hardware_init.c</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>::CMSIS</GroupName>

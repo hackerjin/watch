@@ -1,8 +1,8 @@
 watch\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c
-watch\heap_4.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+watch\heap_4.o: D:\MDK\ARM\ARMCC\Bin\..\include\stdlib.h
 watch\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
-watch\heap_4.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
-watch\heap_4.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+watch\heap_4.o: D:\MDK\ARM\ARMCC\Bin\..\include\stddef.h
+watch\heap_4.o: D:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
 watch\heap_4.o: ../Core/Inc/FreeRTOSConfig.h
 watch\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
 watch\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h

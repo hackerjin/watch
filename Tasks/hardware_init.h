@@ -1,0 +1,1 @@
+void HardwareInitTask(void *argument);
