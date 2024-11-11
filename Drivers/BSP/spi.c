@@ -49,8 +49,7 @@ void HAL_SPI_MspInit(SPI_HandleTypeDef* hspi)
     GPIO_InitStruct.Alternate = GPIO_AF5_SPI1;
     HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
-    /* SPI1 DMA Init */
-    /* SPI1_TX Init */
+
     hdma_spi1_tx.Instance = DMA2_Stream2;
     hdma_spi1_tx.Init.Channel = DMA_CHANNEL_2;
     hdma_spi1_tx.Init.Direction = DMA_MEMORY_TO_PERIPH;

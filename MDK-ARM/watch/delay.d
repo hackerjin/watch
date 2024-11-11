@@ -4,7 +4,7 @@ watch\delay.o: ../Core/Inc/sys.h
 watch\delay.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
 watch\delay.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h
 watch\delay.o: ../Drivers/CMSIS/Include/core_cm4.h
-watch\delay.o: D:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+watch\delay.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 watch\delay.o: ../Drivers/CMSIS/Include/cmsis_version.h
 watch\delay.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
 watch\delay.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
@@ -16,7 +16,7 @@ watch\delay.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
 watch\delay.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
 watch\delay.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
 watch\delay.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
-watch\delay.o: D:\MDK\ARM\ARMCC\Bin\..\include\stddef.h
+watch\delay.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
 watch\delay.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
 watch\delay.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h
 watch\delay.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h

@@ -1,11 +1,12 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdbool.h>
 #include "cmsis_os.h"
 #include "lcd.h"
 #include "lcd_init.h"
 #include "sys.h"
 #include "delay.h"
-#include <stdio.h>
-#include <stdbool.h>
+
 
 void SystemClock_Config(void);
 void MX_ADC1_Init(void);
@@ -13,10 +14,12 @@ void MX_RTC_Init(void);
 void MX_TIM3_Init(void);
 bool MX_SPI1_Init(void);
 void MX_USART1_UART_Init(void);
+void hardware_init_task(void *argument);
 
 
-osThreadId_t HardwareInitTaskHandle;
-const osThreadAttr_t HardwareInitTask_attributes = {
+
+osThreadId_t hardware_init_handle;
+const osThreadAttr_t hardware_init_task_attributes = {
   .name = "HardwareInitTask",
   .stack_size = 128 * 10,
   .priority = (osPriority_t) osPriorityHigh3,
@@ -27,7 +30,7 @@ const osThreadAttr_t HardwareInitTask_attributes = {
 
 void tasks_init()
 {
-    HardwareInitTaskHandle  = osThreadNew(HardwareInitTask, NULL, &HardwareInitTask_attributes);
+    hardware_init_handle  = osThreadNew(hardware_init_task, NULL, &hardware_init_task_attributes);
     
 }
 
@@ -47,18 +50,12 @@ int main(void)
     MX_SPI1_Init();
     MX_TIM3_Init();
     MX_USART1_UART_Init();
-
+    
+    delay_init();
+   
     osKernelInitialize();
-
-
-
-
-
-    tasks_init();     
-
-
-
-
+    tasks_init();   
+    
     osKernelStart();
 
     while (1)

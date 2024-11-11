@@ -648,6 +648,21 @@
               <FileType>1</FileType>
               <FilePath>..\Drivers\BSP\lcd_init.c</FilePath>
             </File>
+            <File>
+              <FileName>touch.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\BSP\touch.c</FilePath>
+            </File>
+            <File>
+              <FileName>temp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\BSP\temp.c</FilePath>
+            </File>
+            <File>
+              <FileName>eeprom.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\BSP\eeprom.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

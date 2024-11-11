@@ -1,8 +1,8 @@
 watch\cmsis_os2.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c
-watch\cmsis_os2.o: D:\MDK\ARM\ARMCC\Bin\..\include\string.h
+watch\cmsis_os2.o: D:\keil5\ARM\ARMCC\Bin\..\include\string.h
 watch\cmsis_os2.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
-watch\cmsis_os2.o: D:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
-watch\cmsis_os2.o: D:\MDK\ARM\ARMCC\Bin\..\include\stddef.h
+watch\cmsis_os2.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+watch\cmsis_os2.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
 watch\cmsis_os2.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
 watch\cmsis_os2.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
 watch\cmsis_os2.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h

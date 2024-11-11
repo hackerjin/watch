@@ -11,17 +11,12 @@
 extern osSemaphoreId_t DMA_SemaphoreHandle;
 
 
-/******************************************************************************
-      函数说明：在指定区域填充颜色
-      入口数据：xsta,ysta   起始坐标
-                xend,yend   终止坐标
-								color       要填充的颜色
-      返回值：  无
-******************************************************************************/
+
+//注意这里的y坐标整体要向下偏移20
 void LCD_Fill(u16 xsta,u16 ysta,u16 xend,u16 yend,u16 color)
 {          
 	u16 i,j; 
-	LCD_Address_Set(xsta,ysta+OFFSET_Y,xend-1,yend-1+OFFSET_Y);//设置显示范围
+	LCD_Address_Set(xsta,ysta+OFFSET_Y,xend,yend+OFFSET_Y);//设置显示范围
 	for(i=ysta;i<yend;i++)
 	{		
 		for(j=xsta;j<xend;j++)
