@@ -50,6 +50,7 @@
 "watch\touch.o"
 "watch\temp.o"
 "watch\eeprom.o"
+"watch\compass.o"
 "watch\hardware_init.o"
 --strict --scatter "watch\watch.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols

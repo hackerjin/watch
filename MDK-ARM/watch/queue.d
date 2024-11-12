@@ -1,9 +1,9 @@
 watch\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/queue.c
-watch\queue.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdlib.h
-watch\queue.o: D:\keil5\ARM\ARMCC\Bin\..\include\string.h
+watch\queue.o: D:\MDK\ARM\ARMCC\Bin\..\include\stdlib.h
+watch\queue.o: D:\MDK\ARM\ARMCC\Bin\..\include\string.h
 watch\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
-watch\queue.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
-watch\queue.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+watch\queue.o: D:\MDK\ARM\ARMCC\Bin\..\include\stddef.h
+watch\queue.o: D:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
 watch\queue.o: ../Core/Inc/FreeRTOSConfig.h
 watch\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
 watch\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h

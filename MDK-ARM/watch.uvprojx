@@ -663,6 +663,11 @@
               <FileType>1</FileType>
               <FilePath>..\Drivers\BSP\eeprom.c</FilePath>
             </File>
+            <File>
+              <FileName>compass.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\BSP\compass.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

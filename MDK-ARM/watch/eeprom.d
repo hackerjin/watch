@@ -1,6 +1,6 @@
 watch\eeprom.o: ..\Drivers\BSP\eeprom.c
 watch\eeprom.o: ..\Drivers\BSP\eeprom.h
-watch\eeprom.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+watch\eeprom.o: D:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
 watch\eeprom.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 watch\eeprom.o: ../Core/Inc/stm32f4xx_hal_conf.h
 watch\eeprom.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
@@ -15,7 +15,7 @@ watch\eeprom.o: ../Drivers/CMSIS/Include/mpu_armv7.h
 watch\eeprom.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
 watch\eeprom.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 watch\eeprom.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
-watch\eeprom.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
+watch\eeprom.o: D:\MDK\ARM\ARMCC\Bin\..\include\stddef.h
 watch\eeprom.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
 watch\eeprom.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h
 watch\eeprom.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h
