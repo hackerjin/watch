@@ -1,0 +1,19 @@
+﻿曹云鹤20110620修改内容========================================================================
+Device 表中增加以下字段：
+public abstract bool HasTarget { get; set; }// 是否有靶材电机
+public abstract int TargetElectricalCode { get; set; }//靶材编号
+public abstract int TargetElectricalDirect { get; set; }//方向
+public abstract int TargetMaxNum { get; set; }//最大编号
+public abstract int TargetSpeed { get; set; }//速度
+
+增加表 Target
+字段包括：
+public abstract int Num { get; set; }//编号
+public abstract int Step { get; set; }//步长
+public abstract string Caption { get; set; }//成分
+public abstract int AtomNum { get; set; }//元素ID
+public abstract double TargetThickness { get; set; }//厚度
+        
+DeviceParameter 表中增加以下字段：
+public abstract int TargetIdx { get; set; }//靶材
+==============================================================================================

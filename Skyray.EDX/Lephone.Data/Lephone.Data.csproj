@@ -1,0 +1,481 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{25AFD300-493A-4553-B4DC-129D3A9022A8}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyName>Lephone.Data</AssemblyName>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lephone.Data</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <PostBuildEvent>if "$(ConfigurationName)" == "Release" goto Release
+goto End
+
+:Release
+copy *.dll ..\..\..\..\bin\
+
+:End</PostBuildEvent>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>DbEntry.snk</AssemblyOriginatorKeyFile>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>http://localhost/Lephone.Data/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\..\..\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>Full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\..\..\Release\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>Full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>..\..\..\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <FileAlignment>4096</FileAlignment>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Builder\Clause\ConstCondition.cs" />
+    <Compile Include="Builder\Clause\InClause.cs" />
+    <Compile Include="Builder\ISqlKeys.cs" />
+    <Compile Include="Caching\CacheProvider.cs" />
+    <Compile Include="Caching\KeyGenerator.cs" />
+    <Compile Include="Caching\StaticHashCacheProvider.cs" />
+    <Compile Include="Caching\TimeValue.cs" />
+    <Compile Include="Common\AccessDataReader.cs" />
+    <Compile Include="Common\BulkCopyProcessor.cs" />
+    <Compile Include="Common\CachedListInserter.cs" />
+    <Compile Include="Common\ColumnFunction.cs" />
+    <Compile Include="Common\DbStructInterface.cs" />
+    <Compile Include="Common\DeleteToQueryComposer.cs" />
+    <Compile Include="Common\DynamicLinqObjectHandler.cs" />
+    <Compile Include="Common\DynamicObjectBuilder.cs" />
+    <Compile Include="Common\ForTypeAttribute.cs" />
+    <Compile Include="Common\GroupBySumObject.cs" />
+    <Compile Include="Common\AssemblyHandler.cs" />
+    <Compile Include="Common\LephoneSetting.cs" />
+    <Compile Include="Common\ModelUpdater.cs" />
+    <Compile Include="Common\ObjectInfo_ctor.cs" />
+    <Compile Include="Common\TimeSpanLessDataReader.cs" />
+    <Compile Include="DataReaderEmitHelper.cs" />
+    <Compile Include="Definition\CacheableAttribute.cs" />
+    <Compile Include="Common\DynamicObjectReference.cs" />
+    <Compile Include="Common\EmitObjectHandlerBase.cs" />
+    <Compile Include="Common\GroupByObject.cs" />
+    <Compile Include="Common\IDbObjectHandler.cs" />
+    <Compile Include="Common\CrossTable.cs" />
+    <Compile Include="Common\OptimisticLockingQueryComposer.cs" />
+    <Compile Include="Common\QueryComposer.cs" />
+    <Compile Include="Common\MemberAdapater.cs" />
+    <Compile Include="Common\MemoryAssembly.cs" />
+    <Compile Include="Common\MemoryTypeBuilder.cs" />
+    <Compile Include="Common\ReflectionDbObjectHandler.cs" />
+    <Compile Include="Common\SoftDeleteQueryComposer.cs" />
+    <Compile Include="Common\StaticPagedSelector.cs" />
+    <Compile Include="Common\StupidDataReader.cs" />
+    <Compile Include="Common\VBHelper.cs" />
+    <Compile Include="DbContext.cs" />
+    <Compile Include="Definition\CrossTableNameAttribute.cs" />
+    <Compile Include="Definition\DbContextAttribute.cs" />
+    <Compile Include="Definition\DbObjectModelAsTree.cs" />
+    <Compile Include="Definition\BelongsToAttribute.cs" />
+    <Compile Include="Definition\DbObjectBase.cs" />
+    <Compile Include="Definition\DbObjectModel.cs" />
+    <Compile Include="Definition\DbObjectModelBase.cs" />
+    <Compile Include="Definition\DbObjectSmartUpdate.cs" />
+    <Compile Include="Definition\DefaultAttribute.cs" />
+    <Compile Include="Definition\DeleteToAttribute.cs" />
+    <Compile Include="Definition\HasAndBelongsToMany.cs" />
+    <Compile Include="Definition\HasAndBelongsToManyAttribute.cs" />
+    <Compile Include="Definition\HasManyAttribute.cs" />
+    <Compile Include="Definition\HasOne.cs" />
+    <Compile Include="Definition\HasOneAttribute.cs" />
+    <Compile Include="Definition\IBelongsTo.cs" />
+    <Compile Include="Definition\IDataReaderInitalize.cs" />
+    <Compile Include="Definition\IDbObject.cs" />
+    <Compile Include="Definition\ILazyLoading.cs" />
+    <Compile Include="Common\EmptyCondition.cs" />
+    <Compile Include="Builder\CreateTableStatementBuilder.cs" />
+    <Compile Include="Builder\DbIndex.cs" />
+    <Compile Include="Definition\ISavedNewRelations.cs" />
+    <Compile Include="Definition\LazyLoadAttribute.cs" />
+    <Compile Include="Definition\LazyLoadField.cs" />
+    <Compile Include="Definition\LazyLoadListBase.cs" />
+    <Compile Include="Definition\LazyLoadOneBase.cs" />
+    <Compile Include="Definition\OrderByAttribute.cs" />
+    <Compile Include="Definition\SoftDeleteAttribute.cs" />
+    <Compile Include="Definition\SpecialNameAttribute.cs" />
+    <Compile Include="Dialect\Access2007.cs" />
+    <Compile Include="Dialect\Excel2007.cs" />
+    <Compile Include="Dialect\Firebird.cs" />
+    <Compile Include="Dialect\Oracle.cs" />
+    <Compile Include="Dialect\PostgreSQL.cs" />
+    <Compile Include="Dialect\SequencedDialect.cs" />
+    <Compile Include="Dialect\SqlCE.cs" />
+    <Compile Include="Dialect\SqlServer2008.cs" />
+    <Compile Include="Driver\DbFactory.cs" />
+    <Compile Include="Driver\MySqlDriver.cs" />
+    <Compile Include="Driver\SmartDbFactory.cs" />
+    <Compile Include="Linq\ExpressionParser.cs" />
+    <Compile Include="Linq\LinqException.cs" />
+    <Compile Include="Linq\LinqExpressionParser.cs" />
+    <Compile Include="Linq\LinqHelper.cs" />
+    <Compile Include="Linq\LinqOrderSyntax.cs" />
+    <Compile Include="Linq\LinqQueryProvider.cs" />
+    <Compile Include="QuerySyntax\QueryInterfaces.cs" />
+    <Compile Include="SqlEntry\ColumnInfo.cs" />
+    <Compile Include="Logging\DatabaseLogRecorder.cs" />
+    <Compile Include="Definition\AllowNullAttribute.cs" />
+    <Compile Include="Definition\IndexAttribute.cs" />
+    <Compile Include="Definition\LengthAttribute.cs" />
+    <Compile Include="Definition\StringColumnAttribute.cs" />
+    <Compile Include="Definition\BelongsTo.cs" />
+    <Compile Include="Definition\HasMany.cs" />
+    <Compile Include="SqlEntry\CommonBulkCopy.cs" />
+    <Compile Include="SqlEntry\ConnectionContext.cs" />
+    <Compile Include="SqlEntry\DbColumnInfo.cs" />
+    <Compile Include="SqlEntry\AutoValue.cs" />
+    <Compile Include="SqlEntry\IDbBulkCopy.cs" />
+    <Compile Include="SqlEntry\IHasConnection.cs" />
+    <Compile Include="Common\LimitedListInserter.cs" />
+    <Compile Include="Definition\NamedDbObject.cs" />
+    <Compile Include="QuerySyntax\QueryContent.cs" />
+    <Compile Include="SqlEntry\SqlServerBulkCopy.cs" />
+    <Compile Include="ValidateHandler.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Builder\DeleteStatementBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Builder\IClause.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Builder\InsertStatementBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Builder\ISqlStatementBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Builder\ISqlValues.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Builder\ISqlWhere.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Builder\Clause\JoinClause.cs" />
+    <Compile Include="Definition\JoinMode.cs" />
+    <Compile Include="ASC.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DESC.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Builder\Clause\FromClause.cs" />
+    <Compile Include="OrderBy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Builder\Clause\SetClause.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\Range.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Builder\Clause\ValuesClause.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Builder\SelectStatementBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Builder\UpdateStatementBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Builder\Clause\AndClause.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CK.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Definition\CompareOpration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Builder\Clause\ConditionClause.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Condition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Builder\Clause\KeyKeyClause.cs" />
+    <Compile Include="Builder\Clause\KeyValueClause.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Builder\Clause\NotClause.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Builder\Clause\OrClause.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Builder\Clause\WhereClause.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SqlEntry\DataParameter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SqlEntry\DataParameterCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\DataSetting.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SqlEntry\DataType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SqlEntry\DataTypeParser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dialect\Access.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dialect\DbDialect.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dialect\Excel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dialect\MySql.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dialect\SQLite.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dialect\SqlServer2000.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dialect\SqlServer2005.cs" />
+    <Compile Include="Driver\CommonDbDriver.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Driver\DbDriver.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\EntryConfig.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Driver\OdbcDriver.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Driver\OleDbDriver.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Driver\SqlServerDriver.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SqlEntry\DataProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Definition\DbKeyAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Definition\DbTableAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Definition\ExcludeAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Definition\DisableSqlLogAttribute.cs" />
+    <Compile Include="Definition\DbColumnAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Definition\JoinOnAttribute.cs" />
+    <Compile Include="IPagedSelector.cs" />
+    <Compile Include="PagedCollection.cs" />
+    <Compile Include="Definition\DbObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\DbObjectList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\ObjectInfo_Helper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DbEntry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\DbEnum.cs" />
+    <Compile Include="Common\LephoneEnum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\MemberHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\IProcessor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\ObjectInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\ListInserter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\NullableHelper.cs" />
+    <Compile Include="Common\PagedSelector.cs" />
+    <Compile Include="SqlEntry\KeyValue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SqlEntry\KeyValueCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logging\Log2db.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logging\LephoneLog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SqlEntry\SqlStatement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SqlEntry\TimeConsumingSqlStatement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DbEntry.snk" />
+    <EmbeddedResource Include="dynamic.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lephone.Util\Lephone.Util.csproj">
+      <Project>{F53E89FC-F364-4C7D-A20A-CACFBF11C196}</Project>
+      <Name>Lephone.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,954 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="Accept" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="AddNewSpectrum" xml:space="preserve">
+    <value>Add New Spectrum</value>
+  </data>
+  <data name="AddPeak" xml:space="preserve">
+    <value>Add Peak Label</value>
+  </data>
+  <data name="AdjustCountRate" xml:space="preserve">
+    <value>Adjust Count Rate</value>
+  </data>
+  <data name="Ajustcoefficient" xml:space="preserve">
+    <value>Adjust coefficient</value>
+  </data>
+  <data name="AllInfo" xml:space="preserve">
+    <value>All information</value>
+  </data>
+  <data name="Analysis" xml:space="preserve">
+    <value>Analysis</value>
+  </data>
+  <data name="AskClose" xml:space="preserve">
+    <value>Are you sure?</value>
+  </data>
+  <data name="BaseHigh" xml:space="preserve">
+    <value>Base Right</value>
+  </data>
+  <data name="BaseLow" xml:space="preserve">
+    <value>Base Left</value>
+  </data>
+  <data name="BeginChannel" xml:space="preserve">
+    <value>Channel Begin</value>
+  </data>
+  <data name="Brightness" xml:space="preserve">
+    <value>Brightness</value>
+  </data>
+  <data name="Calculate" xml:space="preserve">
+    <value>Calculate</value>
+  </data>
+  <data name="Calibration" xml:space="preserve">
+    <value>Calibration</value>
+  </data>
+  <data name="Camera" xml:space="preserve">
+    <value>Camera</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Canves" xml:space="preserve">
+    <value>Canves</value>
+  </data>
+  <data name="ChamberMotor" xml:space="preserve">
+    <value>Motor with chamber </value>
+  </data>
+  <data name="Channel" xml:space="preserve">
+    <value>Channel</value>
+  </data>
+  <data name="ClearAll" xml:space="preserve">
+    <value>ClearAll</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="CoarseCode" xml:space="preserve">
+    <value>Amplification(C)</value>
+  </data>
+  <data name="Collimator" xml:space="preserve">
+    <value>Collimator</value>
+  </data>
+  <data name="ColliMotor" xml:space="preserve">
+    <value>Motor with Collimator</value>
+  </data>
+  <data name="Color" xml:space="preserve">
+    <value>Color</value>
+  </data>
+  <data name="ConditionID" xml:space="preserve">
+    <value>Condition ID</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>Hint</value>
+  </data>
+  <data name="Contect" xml:space="preserve">
+    <value>Tel:0512-57017022 Mail:pme@skyray-instrument.com</value>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>Content</value>
+  </data>
+  <data name="ContentError" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="ContentRevise" xml:space="preserve">
+    <value>Content Revise</value>
+  </data>
+  <data name="Contrast" xml:space="preserve">
+    <value>Contrast</value>
+  </data>
+  <data name="CorrelationCoefficient" xml:space="preserve">
+    <value>Correlation Coefficient</value>
+  </data>
+  <data name="CorrelationElement" xml:space="preserve">
+    <value>Correlation Element</value>
+  </data>
+  <data name="Count" xml:space="preserve">
+    <value>Count</value>
+  </data>
+  <data name="CountHighWarn" xml:space="preserve">
+    <value>Counts are to high, please select lower HV and Current!</value>
+  </data>
+  <data name="CountRate" xml:space="preserve">
+    <value>Count Rate</value>
+  </data>
+  <data name="Current" xml:space="preserve">
+    <value>Current</value>
+  </data>
+  <data name="CurrentlyInfo" xml:space="preserve">
+    <value>Currently infotmation</value>
+  </data>
+  <data name="CustomField" xml:space="preserve">
+    <value>CustomField</value>
+  </data>
+  <data name="Data" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="DataWrong" xml:space="preserve">
+    <value>It must be a number!</value>
+  </data>
+  <data name="Default" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="Degree" xml:space="preserve">
+    <value>Degree</value>
+  </data>
+  <data name="Detector" xml:space="preserve">
+    <value>Detector</value>
+  </data>
+  <data name="Device" xml:space="preserve">
+    <value>Device</value>
+  </data>
+  <data name="DeviceType" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="Difference" xml:space="preserve">
+    <value>Difference</value>
+  </data>
+  <data name="Direction" xml:space="preserve">
+    <value>Direction</value>
+  </data>
+  <data name="DisplayElement" xml:space="preserve">
+    <value>Display Qualitative Elements</value>
+  </data>
+  <data name="DisplayPeak" xml:space="preserve">
+    <value>Display Peak Label</value>
+  </data>
+  <data name="DllType" xml:space="preserve">
+    <value>DllType</value>
+  </data>
+  <data name="Down" xml:space="preserve">
+    <value>Down</value>
+  </data>
+  <data name="EditCorrelationElement" xml:space="preserve">
+    <value>Edit　Correlation　Element</value>
+  </data>
+  <data name="EditData" xml:space="preserve">
+    <value>Edit Data</value>
+  </data>
+  <data name="EditElement" xml:space="preserve">
+    <value>Element</value>
+  </data>
+  <data name="EditElementSpectrum" xml:space="preserve">
+    <value>Edit Element Spectrum </value>
+  </data>
+  <data name="ElemAdjustSpecData" xml:space="preserve">
+    <value>Spec Cal Lib</value>
+  </data>
+  <data name="Element" xml:space="preserve">
+    <value>Element</value>
+  </data>
+  <data name="ElementCountLimit" xml:space="preserve">
+    <value>element number can't bigger than %s </value>
+  </data>
+  <data name="ElementInvalid" xml:space="preserve">
+    <value>'%s' is Invalid </value>
+  </data>
+  <data name="ElementTable" xml:space="preserve">
+    <value>Element Table</value>
+  </data>
+  <data name="ElemSpecData" xml:space="preserve">
+    <value>Spec Lib</value>
+  </data>
+  <data name="Ellipse" xml:space="preserve">
+    <value>Ellipse</value>
+  </data>
+  <data name="EmergentAngle" xml:space="preserve">
+    <value>Emer.</value>
+  </data>
+  <data name="Enabled" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+  <data name="EndChannel" xml:space="preserve">
+    <value>Channel End</value>
+  </data>
+  <data name="Energy" xml:space="preserve">
+    <value>Energy</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="ExpriationDate" xml:space="preserve">
+    <value>Expriation date, please contact Skyray ASAP and extend your expiration date.</value>
+  </data>
+  <data name="Filter" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="FilterMotor" xml:space="preserve">
+    <value>Motor with Filter</value>
+  </data>
+  <data name="FineCode" xml:space="preserve">
+    <value>Amplification(F)</value>
+  </data>
+  <data name="FitElem" xml:space="preserve">
+    <value>Fit Element</value>
+  </data>
+  <data name="Focus" xml:space="preserve">
+    <value>Focus</value>
+  </data>
+  <data name="FocusSpot" xml:space="preserve">
+    <value>FocusSpot</value>
+  </data>
+  <data name="Formula" xml:space="preserve">
+    <value>Formula</value>
+  </data>
+  <data name="FormulaInvalid" xml:space="preserve">
+    <value>Formula is Invalid</value>
+  </data>
+  <data name="FWHM" xml:space="preserve">
+    <value>FWHM</value>
+  </data>
+  <data name="Graphic" xml:space="preserve">
+    <value>Graphic</value>
+  </data>
+  <data name="HistoryRecord" xml:space="preserve">
+    <value>History Record</value>
+  </data>
+  <data name="ID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="IncidenceAngle" xml:space="preserve">
+    <value>Inc.</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="InitalChann" xml:space="preserve">
+    <value>Initalize Channel</value>
+  </data>
+  <data name="InitalCurrent" xml:space="preserve">
+    <value>Initalize Current</value>
+  </data>
+  <data name="InitalElem" xml:space="preserve">
+    <value>Initalize Element</value>
+  </data>
+  <data name="InitalError" xml:space="preserve">
+    <value>Initalize Error</value>
+  </data>
+  <data name="InitalVoltage" xml:space="preserve">
+    <value>Initalize voltage</value>
+  </data>
+  <data name="InitialFaile" xml:space="preserve">
+    <value>Initial failed!</value>
+  </data>
+  <data name="Initialization" xml:space="preserve">
+    <value>Initialization</value>
+  </data>
+  <data name="InitialSucceed" xml:space="preserve">
+    <value>Initialization succeeded!</value>
+  </data>
+  <data name="InputDataErr" xml:space="preserve">
+    <value>'Value is wrong.</value>
+  </data>
+  <data name="InputDataErrFloat" xml:space="preserve">
+    <value>' Value must be float.</value>
+  </data>
+  <data name="InputDataErrInt" xml:space="preserve">
+    <value>' Value must be integer.</value>
+  </data>
+  <data name="Insert" xml:space="preserve">
+    <value>Insert</value>
+  </data>
+  <data name="InstrementIsRunning" xml:space="preserve">
+    <value>Instrument is still Running, are you sure to quit?</value>
+  </data>
+  <data name="Intellectualized" xml:space="preserve">
+    <value>Intellectualized</value>
+  </data>
+  <data name="Intensity" xml:space="preserve">
+    <value>Intensity</value>
+  </data>
+  <data name="IntensityRevise" xml:space="preserve">
+    <value>Intensity Revise</value>
+  </data>
+  <data name="IntensityWay" xml:space="preserve">
+    <value>Intensity Way</value>
+  </data>
+  <data name="InvalidFile" xml:space="preserve">
+    <value>Invalid File.</value>
+  </data>
+  <data name="InvalidName" xml:space="preserve">
+    <value>Name is Invalid.</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="LeftDay" xml:space="preserve">
+    <value>There is {0} day period end of the authorization.</value>
+  </data>
+  <data name="LeftDayHint" xml:space="preserve">
+    <value>In order not to affect your narmal use of software,there is {0} day period end of the authorization , please contact Jiangsu Skyray Instrument Co.,Ltd. ASAP.</value>
+  </data>
+  <data name="LeftHour" xml:space="preserve">
+    <value>There is {0} hour period end of the authorization.</value>
+  </data>
+  <data name="LeftHourHint" xml:space="preserve">
+    <value>In order not to affect your narmal use of software,there is {0} hour period end of the authorization , please contact Jiangsu Skyray Instrument Co.,Ltd. ASAP.</value>
+  </data>
+  <data name="LeftTime" xml:space="preserve">
+    <value>Time Left</value>
+  </data>
+  <data name="Linear" xml:space="preserve">
+    <value>Linear</value>
+  </data>
+  <data name="Local" xml:space="preserve">
+    <value>Local</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="LotNo" xml:space="preserve">
+    <value>Lot No.</value>
+  </data>
+  <data name="MagnetExist" xml:space="preserve">
+    <value>ElectroMagnet</value>
+  </data>
+  <data name="MainElem" xml:space="preserve">
+    <value>Main Element</value>
+  </data>
+  <data name="MainElementValueZero" xml:space="preserve">
+    <value>The content or intensity of the main can not be zero</value>
+  </data>
+  <data name="Matching" xml:space="preserve">
+    <value>Matching</value>
+  </data>
+  <data name="MatchTime" xml:space="preserve">
+    <value>Matching Time</value>
+  </data>
+  <data name="MatchValue" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="MaxCountRate" xml:space="preserve">
+    <value>Max Count Rate</value>
+  </data>
+  <data name="MaxValue" xml:space="preserve">
+    <value>Max.</value>
+  </data>
+  <data name="MeanValue" xml:space="preserve">
+    <value>Mean.</value>
+  </data>
+  <data name="MeasureDate" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="MeasureInfo" xml:space="preserve">
+    <value>Measure information</value>
+  </data>
+  <data name="MeasureNumber" xml:space="preserve">
+    <value>Number of Readings</value>
+  </data>
+  <data name="MeasureParam" xml:space="preserve">
+    <value>Measurement</value>
+  </data>
+  <data name="MeasureTime" xml:space="preserve">
+    <value>Measure Time</value>
+  </data>
+  <data name="MinCountRate" xml:space="preserve">
+    <value>Min Count Rate</value>
+  </data>
+  <data name="MinValue" xml:space="preserve">
+    <value>Min.</value>
+  </data>
+  <data name="Mode" xml:space="preserve">
+    <value>Mode</value>
+  </data>
+  <data name="Modify" xml:space="preserve">
+    <value>Modify</value>
+  </data>
+  <data name="MotorChamberExists" xml:space="preserve">
+    <value>Motor with Chamber Exist</value>
+  </data>
+  <data name="MotorColliExists" xml:space="preserve">
+    <value>Motor with collimator exists</value>
+  </data>
+  <data name="MotorFilterExists" xml:space="preserve">
+    <value>Motor with filter exists</value>
+  </data>
+  <data name="MotorFineAdjust" xml:space="preserve">
+    <value>Sample Chamber Adjust</value>
+  </data>
+  <data name="MotorStep" xml:space="preserve">
+    <value>Step</value>
+  </data>
+  <data name="MotorTag" xml:space="preserve">
+    <value>Tag</value>
+  </data>
+  <data name="MotorTagCount" xml:space="preserve">
+    <value>Tag Count</value>
+  </data>
+  <data name="MustOpenCur" xml:space="preserve">
+    <value>Must be open a Curve!</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="NoAskMe" xml:space="preserve">
+    <value>Do not ask me again!</value>
+  </data>
+  <data name="NoRecords" xml:space="preserve">
+    <value>Can't print,the record has not exist!</value>
+  </data>
+  <data name="Normal" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="NotDeleteUser" xml:space="preserve">
+    <value>Can not delete the running user!</value>
+  </data>
+  <data name="Notnull" xml:space="preserve">
+    <value>can not be null!</value>
+  </data>
+  <data name="NullCondition" xml:space="preserve">
+    <value>Test condition is not exist.</value>
+  </data>
+  <data name="NullUserPwd" xml:space="preserve">
+    <value>Username and Password is null!</value>
+  </data>
+  <data name="Number" xml:space="preserve">
+    <value>Number</value>
+  </data>
+  <data name="Off" xml:space="preserve">
+    <value>Off</value>
+  </data>
+  <data name="On" xml:space="preserve">
+    <value>On</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="Operator" xml:space="preserve">
+    <value>Operator</value>
+  </data>
+  <data name="OptFactor" xml:space="preserve">
+    <value>Factor</value>
+  </data>
+  <data name="Optimization" xml:space="preserve">
+    <value>Optimization</value>
+  </data>
+  <data name="OptRange" xml:space="preserve">
+    <value>Range</value>
+  </data>
+  <data name="OptValue" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="OtherSet" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="PasswordError" xml:space="preserve">
+    <value>Password is error!</value>
+  </data>
+  <data name="PeakChann" xml:space="preserve">
+    <value>Channel of Peak</value>
+  </data>
+  <data name="PeakDivBase" xml:space="preserve">
+    <value>Peak//Base</value>
+  </data>
+  <data name="PeakHeight" xml:space="preserve">
+    <value>Peak Height</value>
+  </data>
+  <data name="PeakHigh" xml:space="preserve">
+    <value>Peak Right</value>
+  </data>
+  <data name="PeakLine" xml:space="preserve">
+    <value>Line</value>
+  </data>
+  <data name="PeakLow" xml:space="preserve">
+    <value>Peak left</value>
+  </data>
+  <data name="PeakOffset" xml:space="preserve">
+    <value>Peak Offset</value>
+  </data>
+  <data name="PeakValue" xml:space="preserve">
+    <value>Peak Value</value>
+  </data>
+  <data name="PeakWidth" xml:space="preserve">
+    <value>Peak Width</value>
+  </data>
+  <data name="Port" xml:space="preserve">
+    <value>Port</value>
+  </data>
+  <data name="Position" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="PrintReport" xml:space="preserve">
+    <value>Print Report</value>
+  </data>
+  <data name="PrintScreen" xml:space="preserve">
+    <value>Print Screen</value>
+  </data>
+  <data name="PumbMagnetBothExist" xml:space="preserve">
+    <value>Pumb and Magnet can't existed together!</value>
+  </data>
+  <data name="PumpExists" xml:space="preserve">
+    <value>Pump  Exists</value>
+  </data>
+  <data name="PutSample" xml:space="preserve">
+    <value>Place %s sample in chamber</value>
+  </data>
+  <data name="PutStdSample" xml:space="preserve">
+    <value>Place standard sample in chamber</value>
+  </data>
+  <data name="Qualitative" xml:space="preserve">
+    <value>Qualitative</value>
+  </data>
+  <data name="QualitativeParam" xml:space="preserve">
+    <value>Qualitative Parameter</value>
+  </data>
+  <data name="RealValue" xml:space="preserve">
+    <value>Real Value</value>
+  </data>
+  <data name="Rectangle" xml:space="preserve">
+    <value>Rectangle</value>
+  </data>
+  <data name="ReferenceSpec" xml:space="preserve">
+    <value>Reference Spectrum</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="RemovePeak" xml:space="preserve">
+    <value>Remove Peak Label</value>
+  </data>
+  <data name="Report" xml:space="preserve">
+    <value>Report</value>
+  </data>
+  <data name="ReportSetting" xml:space="preserve">
+    <value>Custom</value>
+  </data>
+  <data name="ReviseElemPrompt" xml:space="preserve">
+    <value>Prompt:Element of column will be effected by the element of rwo</value>
+  </data>
+  <data name="RuleUnit" xml:space="preserve">
+    <value>Rule Unit(mm)</value>
+  </data>
+  <data name="SampGrahic" xml:space="preserve">
+    <value>Sample Grahic</value>
+  </data>
+  <data name="SampleInfo" xml:space="preserve">
+    <value>Sample information </value>
+  </data>
+  <data name="SampleIsNotEnough" xml:space="preserve">
+    <value>Samples are not enough !</value>
+  </data>
+  <data name="SampleName" xml:space="preserve">
+    <value>Sample Name</value>
+  </data>
+  <data name="Saturation" xml:space="preserve">
+    <value>Saturation</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="SaveAs" xml:space="preserve">
+    <value>Save As</value>
+  </data>
+  <data name="SaveInitalParam" xml:space="preserve">
+    <value>Save initalize parameter?</value>
+  </data>
+  <data name="SavePath" xml:space="preserve">
+    <value>Save Path</value>
+  </data>
+  <data name="SDValue" xml:space="preserve">
+    <value>S.D.</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="SearchByDate" xml:space="preserve">
+    <value>SearchByDate</value>
+  </data>
+  <data name="SearchByName" xml:space="preserve">
+    <value>SearchByName</value>
+  </data>
+  <data name="SelectAll" xml:space="preserve">
+    <value>SelectAll</value>
+  </data>
+  <data name="Setting" xml:space="preserve">
+    <value>Setting</value>
+  </data>
+  <data name="Shape" xml:space="preserve">
+    <value>Shape</value>
+  </data>
+  <data name="SkyrayLogo" xml:space="preserve">
+    <value>Skyray Logo</value>
+  </data>
+  <data name="SkyrayPrintTemplateCN" xml:space="preserve">
+    <value>Skyray print template(CN)</value>
+  </data>
+  <data name="SkyrayPrintTemplateEN" xml:space="preserve">
+    <value>Skyray print template(EN)</value>
+  </data>
+  <data name="Slope" xml:space="preserve">
+    <value>Slope</value>
+  </data>
+  <data name="SourceSetting" xml:space="preserve">
+    <value>SourceSetting</value>
+  </data>
+  <data name="SpecGraphic" xml:space="preserve">
+    <value>Spectrum Graphic</value>
+  </data>
+  <data name="SpecInfo" xml:space="preserve">
+    <value>Spectrum Info</value>
+  </data>
+  <data name="Spectrum" xml:space="preserve">
+    <value>Spectrum</value>
+  </data>
+  <data name="SpectrumFile" xml:space="preserve">
+    <value>Spectrum</value>
+  </data>
+  <data name="SpotHeight" xml:space="preserve">
+    <value>Spot Height(mm)</value>
+  </data>
+  <data name="SpotSharp" xml:space="preserve">
+    <value>Spot Sharp</value>
+  </data>
+  <data name="SpotWidth" xml:space="preserve">
+    <value>Spot Width(mm)</value>
+  </data>
+  <data name="SpotX" xml:space="preserve">
+    <value>Spot X(mm)</value>
+  </data>
+  <data name="SpotY" xml:space="preserve">
+    <value>Spot Y(mm)</value>
+  </data>
+  <data name="Statistic" xml:space="preserve">
+    <value>Statistic</value>
+  </data>
+  <data name="Stop" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="StrDataField" xml:space="preserve">
+    <value>Field</value>
+  </data>
+  <data name="StrDataLabel" xml:space="preserve">
+    <value>Label</value>
+  </data>
+  <data name="StrDataTable" xml:space="preserve">
+    <value>DataTable</value>
+  </data>
+  <data name="StrGraph" xml:space="preserve">
+    <value>Graph</value>
+  </data>
+  <data name="StrImage" xml:space="preserve">
+    <value>Image</value>
+  </data>
+  <data name="StrLineX" xml:space="preserve">
+    <value>Horizontal Line</value>
+  </data>
+  <data name="StrLineY" xml:space="preserve">
+    <value>Vertical Line</value>
+  </data>
+  <data name="Summary" xml:space="preserve">
+    <value>Summary</value>
+  </data>
+  <data name="Supplier" xml:space="preserve">
+    <value>Supplier</value>
+  </data>
+  <data name="SystemSet" xml:space="preserve">
+    <value>Setting</value>
+  </data>
+  <data name="TargetAngle" xml:space="preserve">
+    <value>Tube Angle</value>
+  </data>
+  <data name="TargetNumber" xml:space="preserve">
+    <value>Tube Number</value>
+  </data>
+  <data name="Test" xml:space="preserve">
+    <value>Measurement</value>
+  </data>
+  <data name="TestComplete" xml:space="preserve">
+    <value>Test complete</value>
+  </data>
+  <data name="TestResult" xml:space="preserve">
+    <value>Result</value>
+  </data>
+  <data name="TheoryValue" xml:space="preserve">
+    <value>Theory Value</value>
+  </data>
+  <data name="ThornWidth" xml:space="preserve">
+    <value>Thorn Width</value>
+  </data>
+  <data name="TotalContent" xml:space="preserve">
+    <value>Add all elements content</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="Up" xml:space="preserve">
+    <value>Up</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="UserMag" xml:space="preserve">
+    <value>User </value>
+  </data>
+  <data name="VacuumDegree" xml:space="preserve">
+    <value>VacuumDegree</value>
+  </data>
+  <data name="Vacuumize" xml:space="preserve">
+    <value>Pump</value>
+  </data>
+  <data name="VacuumizeByDegree" xml:space="preserve">
+    <value>PumpByDegree</value>
+  </data>
+  <data name="VacuumizeByTime" xml:space="preserve">
+    <value>PumpByTime</value>
+  </data>
+  <data name="VacuumTime" xml:space="preserve">
+    <value>VacuumTime</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="VideoFormat" xml:space="preserve">
+    <value>Video Format</value>
+  </data>
+  <data name="VideoParam" xml:space="preserve">
+    <value>Video Parameter</value>
+  </data>
+  <data name="VideoSize" xml:space="preserve">
+    <value>VideoSize</value>
+  </data>
+  <data name="VideoSource" xml:space="preserve">
+    <value>Video Source</value>
+  </data>
+  <data name="ViewHight" xml:space="preserve">
+    <value>View Hight(mm)</value>
+  </data>
+  <data name="ViewWidth" xml:space="preserve">
+    <value>view Width(mm)</value>
+  </data>
+  <data name="Voltage" xml:space="preserve">
+    <value>Voltage</value>
+  </data>
+  <data name="WarmElemExist" xml:space="preserve">
+    <value>Element Exists!</value>
+  </data>
+  <data name="WarmRemCond" xml:space="preserve">
+    <value>Calibration in use!</value>
+  </data>
+  <data name="WarmRemove" xml:space="preserve">
+    <value>Are you sure you want to Delete?</value>
+  </data>
+  <data name="Weight" xml:space="preserve">
+    <value>Weight</value>
+  </data>
+  <data name="WindowMaterial" xml:space="preserve">
+    <value>Window Material</value>
+  </data>
+  <data name="WindowThick" xml:space="preserve">
+    <value>Window Thick</value>
+  </data>
+  <data name="XExist" xml:space="preserve">
+    <value>%s exists，overwrite?</value>
+  </data>
+  <data name="XRayTube" xml:space="preserve">
+    <value>X-Ray Tube</value>
+  </data>
+  <data name="XYRevert" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="XZoomIn" xml:space="preserve">
+    <value>X Zoom In</value>
+  </data>
+  <data name="XZoomOut" xml:space="preserve">
+    <value>X ZoomOut</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="YZoomIn" xml:space="preserve">
+    <value>Y Zoom In</value>
+  </data>
+  <data name="YZoomOut" xml:space="preserve">
+    <value>Y Zoom Out</value>
+  </data>
+  <data name="ZDown" xml:space="preserve">
+    <value>Z_Motor move down</value>
+  </data>
+  <data name="ZMotor" xml:space="preserve">
+    <value>ZMotor</value>
+  </data>
+  <data name="ZStop" xml:space="preserve">
+    <value>Z_Motor stop move up</value>
+  </data>
+  <data name="ZUp" xml:space="preserve">
+    <value>Z_Motor move up</value>
+  </data>
+  <data name="NullPrinter" xml:space="preserve">
+    <value>Can't find the printer</value>
+  </data>
+</root>

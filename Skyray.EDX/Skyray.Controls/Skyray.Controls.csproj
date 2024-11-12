@@ -1,0 +1,847 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>..\EXE\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <ProjectGuid>{B2A42E4A-4931-4FC0-AD61-FFB550695AB9}</ProjectGuid>
+    <UseVSHostingProcess>True</UseVSHostingProcess>
+    <TargetFrameworkVersion>3.5</TargetFrameworkVersion>
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputType>Library</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <RootNamespace>Skyray.Controls</RootNamespace>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <DefineConstants>TRACE</DefineConstants>
+    <OutputPath>..\..\..\Release\</OutputPath>
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <OutputPath>..\..\..\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>..\..\..\Release\</OutputPath>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells, Version=8.1.1.0, Culture=neutral, PublicKeyToken=00725b1ceb58d0a9, processorArchitecture=MSIL" />
+    <Reference Include="Printing.DataGridViewPrint, Version=1.0.0.3, Culture=neutral, PublicKeyToken=8d28dab18f844921, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ButtonW\ButtonW.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ButtonW\ColorHelper.cs" />
+    <Compile Include="CheckBoxW\CheckBoxW.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ComboBoxW\ComboBoxW.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataGridViewW\CheckedListBoxW.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataGridViewW\DataGridViewCheckListBoxWCell.cs" />
+    <Compile Include="DataGridViewW\DataGridViewCheckListBoxWColumn.cs" />
+    <Compile Include="DataGridViewW\DataGridViewCheckListBoxWEditingControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataGridViewW\DataGridViewWExtension.cs" />
+    <Compile Include="FolderBrowserDialogEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form\AntiAliasGraphics.cs" />
+    <Compile Include="Form\ControlBoxManager.cs" />
+    <Compile Include="Form\ControlBoxState.cs" />
+    <Compile Include="Form\ControlBoxStyle.cs" />
+    <Compile Include="Form\FrmSkyray.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\MouseOperate.cs" />
+    <Compile Include="Form\SkinFormBackgroundRenderEvent.cs" />
+    <Compile Include="Form\SkinFormBorderRenderEvent.cs" />
+    <Compile Include="Form\SkinFormCaptionRenderEvent.cs" />
+    <Compile Include="Form\SkinFormColorTable.cs" />
+    <Compile Include="Form\SkinFormControlBoxRenderEvent.cs" />
+    <Compile Include="Form\SkinFormProfessionalRenderer.cs" />
+    <Compile Include="Form\SkinFormRenderer.cs" />
+    <Compile Include="HelperClass\ControlPaintEx.cs" />
+    <Compile Include="ComboBoxW\ControlState.cs" />
+    <Compile Include="HelperClass\GraphHelper.cs" />
+    <Compile Include="HelperClass\GraphicsPathHelper.cs" />
+    <Compile Include="Enums\Styles.cs" />
+    <Compile Include="HelperClass\StyleHelp.cs" />
+    <Compile Include="HighPerformanceListView\HighPerformanceListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HighPerformanceListView\HighPerformanceListView.designer.cs">
+      <DependentUpon>HighPerformanceListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HighPerformanceListView\HighPerformanceListView.PassThrough.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HighPerformanceListView\IHighPerformanceListViewProvider.cs" />
+    <Compile Include="HighPerformanceListView\ListViewProviderBase.cs" />
+    <Compile Include="HighPerformanceListView\Win32\ListViewUtils.cs" />
+    <Compile Include="HighPerformanceListView\Win32\WinConstants.cs" />
+    <Compile Include="Input\DoubleInputW.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HelperClass\BorderDrawer.cs" />
+    <Compile Include="IPTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LayeredForm\ButtonEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LayeredForm\FormCustom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LayeredForm\FormLayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LayeredForm\MsgBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LayeredForm\Toast.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LayeredForm\Utils.cs" />
+    <Compile Include="LayeredForm\Win32.cs" />
+    <Compile Include="ListViewW.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MessageBox\MyLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MessageBox\MyLabel.Designer.cs">
+      <DependentUpon>MyLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NavigationBar\Common\CancelControlEventArgs.cs" />
+    <Compile Include="NavigationBar\Common\ChildCollectionEventArgs.cs" />
+    <Compile Include="NavigationBar\Common\ChildControlCollection.cs" />
+    <Compile Include="NavigationBar\Common\DefaultClass1.cs" />
+    <Compile Include="NavigationBar\Common\ExtDrawing.cs" />
+    <Compile Include="NavigationBar\Common\IObservable.cs" />
+    <Compile Include="NavigationBar\Common\IObserver.cs" />
+    <Compile Include="NavigationBar\Common\NativeMethods.cs" />
+    <Compile Include="NavigationBar\Common\PopupCancelEventArgs.cs" />
+    <Compile Include="NavigationBar\Common\PopupClosedEventArgs.cs" />
+    <Compile Include="NavigationBar\Common\PopupWindowHelper.cs" />
+    <Compile Include="NavigationBar\Common\PopupWindowHelperMessageFilter.cs" />
+    <Compile Include="NavigationBar\ControlState.cs" />
+    <Compile Include="NavigationBar\Design\NaviBandDesigner.cs" />
+    <Compile Include="NavigationBar\Design\NaviBarDesigner.cs" />
+    <Compile Include="NavigationBar\Design\NaviGroupDesigner.cs" />
+    <Compile Include="NavigationBar\GradientSplitter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NavigationBar\GradientSplitter.Designer.cs">
+      <DependentUpon>GradientSplitter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NavigationBar\InputState.cs" />
+    <Compile Include="NavigationBar\NaviBand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NavigationBar\NaviBand.Designer.cs">
+      <DependentUpon>NaviBand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NavigationBar\NaviBandClientArea.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NavigationBar\NaviBandClientArea.Designer.cs">
+      <DependentUpon>NaviBandClientArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NavigationBar\NaviBandCollapsed.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NavigationBar\NaviBandCollection.cs" />
+    <Compile Include="NavigationBar\NaviBandEventArgs.cs" />
+    <Compile Include="NavigationBar\NaviBandOrderComparer.cs" />
+    <Compile Include="NavigationBar\NaviBandOrgOrderComparer.cs" />
+    <Compile Include="NavigationBar\NaviBandPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NavigationBar\NaviBandPopup.Designer.cs">
+      <DependentUpon>NaviBandPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NavigationBar\NaviBandRenderer.cs" />
+    <Compile Include="NavigationBar\NaviBandRendererOff7.cs" />
+    <Compile Include="NavigationBar\NaviBandSetting.cs" />
+    <Compile Include="NavigationBar\NaviBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NavigationBar\NaviBar.Designer.cs">
+      <DependentUpon>NaviBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NavigationBar\NaviBarRenderer.cs" />
+    <Compile Include="NavigationBar\NaviBarRendererOff3.cs" />
+    <Compile Include="NavigationBar\NaviBarRendererOff7.cs" />
+    <Compile Include="NavigationBar\NaviBarSettings.cs" />
+    <Compile Include="NavigationBar\NaviButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NavigationBar\NaviButton.Designer.cs">
+      <DependentUpon>NaviButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NavigationBar\NaviButtonCollapse.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NavigationBar\NaviButtonCollapse.Designer.cs">
+      <DependentUpon>NaviButtonCollapse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NavigationBar\NaviButtonCollection.cs" />
+    <Compile Include="NavigationBar\NaviButtonOptions.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NavigationBar\NaviButtonOptions.Designer.cs">
+      <DependentUpon>NaviButtonOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NavigationBar\NaviButtonRenderer.cs" />
+    <Compile Include="NavigationBar\NaviButtonRendererOff10.cs" />
+    <Compile Include="NavigationBar\NaviButtonRendererOff3.cs" />
+    <Compile Include="NavigationBar\NaviButtonRendererOff7.cs" />
+    <Compile Include="NavigationBar\NaviColorTable.cs" />
+    <Compile Include="NavigationBar\NaviColorTableOff10.cs" />
+    <Compile Include="NavigationBar\NaviColorTableOff3.cs" />
+    <Compile Include="NavigationBar\NaviColorTableOff3Green.cs" />
+    <Compile Include="NavigationBar\NaviColorTableOff3Silver.cs" />
+    <Compile Include="NavigationBar\NaviColorTableOff7.cs" />
+    <Compile Include="NavigationBar\NaviColorTableOff7Black.cs" />
+    <Compile Include="NavigationBar\NaviColorTableOff7Silver.cs" />
+    <Compile Include="NavigationBar\NaviContextMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NavigationBar\NaviControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NavigationBar\NaviControl.Designer.cs">
+      <DependentUpon>NaviControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NavigationBar\NaviForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NavigationBar\NaviForm.Designer.cs">
+      <DependentUpon>NaviForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NavigationBar\NaviGroup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NavigationBar\NaviGroup.Designer.cs">
+      <DependentUpon>NaviGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NavigationBar\NaviGroupRenderer.cs" />
+    <Compile Include="NavigationBar\NaviGroupRendererOff3.cs" />
+    <Compile Include="NavigationBar\NaviGroupRendererOff7.cs" />
+    <Compile Include="NavigationBar\NaviLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NavigationBar\NaviLayoutOff.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NavigationBar\NaviLayoutStyle.cs" />
+    <Compile Include="NavigationBar\NaviOptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NavigationBar\NaviOptionsForm.Designer.cs">
+      <DependentUpon>NaviOptionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NavigationBar\NaviRenderer.cs" />
+    <Compile Include="NavigationBar\NaviSplitterRenderer.cs" />
+    <Compile Include="NavigationBar\NaviSplitterRendererOff3.cs" />
+    <Compile Include="NavigationBar\NaviSplitterRendererOff7.cs" />
+    <Compile Include="NavigationBar\NaviToolstripOffice07ColorTable.cs" />
+    <Compile Include="NavigationBar\NaviToolstripOffice07Renderer.cs" />
+    <Compile Include="NumricUpDownW\NumricUpDownW.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Renderer\PanelProfessionRender.cs" />
+    <Compile Include="Renderer\PanelRender.cs" />
+    <Compile Include="Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ElementTable\ElementTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ISkyrayStyle.cs" />
+    <Compile Include="HelperClass\RoundStyle.cs" />
+    <Compile Include="DataGridViewW\DataGridViewW.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FolderBrowserDialogW.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Grouper\Constants.cs" />
+    <Compile Include="Grouper\Grouper.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LabelW\LabelW.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ListBoxW\ListBoxW.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ScrollBarEX\ISkyrayControl.cs" />
+    <Compile Include="ScrollBarEX\Office2007BlueRenderer.cs" />
+    <Compile Include="ScrollBarEX\Office2007SilverRenderer.cs" />
+    <Compile Include="ScrollBarEX\ScrollBarArrowButtonState.cs" />
+    <Compile Include="ScrollBarEX\ScrollBarControlDesigner.cs" />
+    <Compile Include="ScrollBarEX\ScrollBarEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ScrollBarEX\ScrollBarExRenderer.cs" />
+    <Compile Include="ScrollBarEX\ScrollBarOrientation.cs" />
+    <Compile Include="ScrollBarEX\ScrollBarState.cs" />
+    <Compile Include="ScrollBarEX\ScrollRenderer.cs" />
+    <Compile Include="SmartGraph\GraphicData.cs" />
+    <Compile Include="SmartGraph\SmartGraph.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SmartGraph\SmartGraphic.Draw.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SmartGraph\SmartGraphic.Event.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TextBoxW\NumericTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Picker\ColorPicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Picker\DashStylePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Picker\FontPicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Picker\HatchStylePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Picker\PickerBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Picker\TablePicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PictureBoxW.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Resource.Designer.cs">
+      <DependentUpon>Resource.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MenuStripW.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CommandLink.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommandLink.designer.cs">
+      <DependentUpon>CommandLink.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DOATransparentLabel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DOATransparentLabel.Designer.cs">
+      <DependentUpon>DOATransparentLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GradientWaitingBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LabelW\LabelWithDivider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LoadingCircle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LoadingCircle.designer.cs">
+      <DependentUpon>LoadingCircle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBox\CommonsInfo.cs" />
+    <Compile Include="MessageBox\SkyrayMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBox\SkyrayMsgBox.cs" />
+    <Compile Include="MTSplitter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Line\NiceLine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProgressCircle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProgressCircle.designer.cs">
+      <DependentUpon>ProgressCircle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DataGridViewW\DataGridViewW.resx">
+      <DependentUpon>DataGridViewW.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ElementTable\ElementTable.resx">
+      <DependentUpon>ElementTable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmSkyray.resx">
+      <DependentUpon>FrmSkyray.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grouper\Grouper.resx">
+      <DependentUpon>Grouper.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HighPerformanceListView\HighPerformanceListView.resx">
+      <DependentUpon>HighPerformanceListView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IPTextBox.resx">
+      <DependentUpon>IPTextBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBox\SkyrayMessageBox.resx">
+      <DependentUpon>SkyrayMessageBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NavigationBar\NaviBandPopup.resx">
+      <DependentUpon>NaviBandPopup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NavigationBar\NaviOptionsForm.resx">
+      <DependentUpon>NaviOptionsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Picker\TablePicker.resx">
+      <DependentUpon>TablePicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Line\simpleLine.resx">
+      <DependentUpon>simpleLine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScrollBarEX\ScrollBarEx.resx">
+      <DependentUpon>ScrollBarEx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splasher\FrmSplash.resx">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tree\TreeViewAdv.resx">
+      <DependentUpon>TreeViewAdv.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VistaMenuControl\VistaMenuControl.resx">
+      <DependentUpon>VistaMenuControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XPander\Panel.resx">
+      <DependentUpon>Panel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XPander\XPanderPanel.resx">
+      <DependentUpon>XPanderPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XPander\XPanderPanelList.resx">
+      <DependentUpon>XPanderPanelList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Renderer\AquaGreenColorTable.cs" />
+    <Compile Include="Renderer\AquaRenderer.cs" />
+    <Compile Include="Renderer\ColorTableRed.cs" />
+    <Compile Include="Renderer\DisplayInformation.cs" />
+    <Compile Include="Renderer\GraphicsTools.cs" />
+    <Compile Include="Renderer\Office2007BlackColorTable.cs" />
+    <Compile Include="Renderer\Office2007BlueColorTable.cs" />
+    <Compile Include="Renderer\Office2007ColorTable.cs" />
+    <Compile Include="Renderer\Office2007Helpers.cs" />
+    <Compile Include="Renderer\Office2007Renderer.cs" />
+    <Compile Include="Renderer\Office2007SilverColorTable.cs" />
+    <Compile Include="Renderer\ProfessionalColorTable.cs" />
+    <Compile Include="Renderer\WindowsVistaColorTable.cs" />
+    <Compile Include="Renderer\WindowsVistaRenderer.cs" />
+    <Compile Include="SelectList\ButtonListBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SelectList\CheckBoxList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SelectList\ControlListBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SelectList\EventedList.cs" />
+    <Compile Include="SelectList\RadioButtonList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SelectList\SparseArray.cs" />
+    <Compile Include="Line\simpleLine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Splasher\FrmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splasher\Splasher.cs" />
+    <Compile Include="StatusStripW.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TabControlW\Events.cs" />
+    <Compile Include="TabControlW\TabControlW.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TextBoxW\TextBoxW.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToolStripW.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToolTipW\ImageDc.cs" />
+    <Compile Include="ToolTipW\InterpolationModeGraphics.cs" />
+    <Compile Include="ToolTipW\RegionHelper.cs" />
+    <Compile Include="HelperClass\RenderHelper.cs" />
+    <Compile Include="ToolTipW\SmoothingModeGraphics.cs" />
+    <Compile Include="ToolTipW\TextRenderingHintGraphics.cs" />
+    <Compile Include="ToolTipW\ToolTipColorTable.cs" />
+    <Compile Include="ToolTipW\ToolTipW.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TrackBarW\TrackBarW.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TrackBarW\NativeMethods.cs" />
+    <Compile Include="TrackBarW\TrackBarDrawItemEventArgs.cs" />
+    <Compile Include="TrackBarW\TrackBarItemState.cs" />
+    <Compile Include="TrackBarW\TrackBarOwnerDrawnParts.cs" />
+    <Compile Include="TrackBarW\TrackDrawModeEditor.cs" />
+    <Compile Include="Tree\AutoRowHeightLayout.cs" />
+    <Compile Include="Tree\ColumnCollection.cs" />
+    <Compile Include="Tree\DrawContext.cs" />
+    <Compile Include="Tree\DropNodeValidatingEventArgs.cs" />
+    <Compile Include="Tree\DropPosition.cs" />
+    <Compile Include="Tree\EditorContext.cs" />
+    <Compile Include="Tree\Enums.cs" />
+    <Compile Include="Tree\FixedRowHeightLayout.cs" />
+    <Compile Include="Tree\TreeHelper\AbortableThreadPool.cs" />
+    <Compile Include="Tree\TreeHelper\BitmapHelper.cs" />
+    <Compile Include="Tree\TreeHelper\GifDecoder.cs" />
+    <Compile Include="Tree\IncrementalSearch.cs" />
+    <Compile Include="Tree\Input\ClickColumnState.cs" />
+    <Compile Include="Tree\Input\ColumnState.cs" />
+    <Compile Include="Tree\Input\InputState.cs" />
+    <Compile Include="Tree\Input\InputWithControl.cs" />
+    <Compile Include="Tree\Input\InputWithShift.cs" />
+    <Compile Include="Tree\Input\NormalInputState.cs" />
+    <Compile Include="Tree\Input\ReorderColumnState.cs" />
+    <Compile Include="Tree\Input\ResizeColumnState.cs" />
+    <Compile Include="Tree\IRowLayout.cs" />
+    <Compile Include="Tree\IToolTipProvider.cs" />
+    <Compile Include="Tree\ITreeModel.cs" />
+    <Compile Include="Tree\ListModel.cs" />
+    <Compile Include="Tree\Node.cs" />
+    <Compile Include="Tree\NodeControlInfo.cs" />
+    <Compile Include="Tree\NodeControls\BaseTextControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tree\NodeControls\BindableControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tree\NodeControls\DrawEventArgs.cs" />
+    <Compile Include="Tree\NodeControls\EditableControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tree\NodeControls\EditEventArgs.cs" />
+    <Compile Include="Tree\NodeControls\ExpandingIcon.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tree\NodeControls\InteractiveControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tree\NodeControls\LabelEventArgs.cs" />
+    <Compile Include="Tree\NodeControls\NodeCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tree\NodeControls\NodeComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tree\NodeControls\NodeControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tree\NodeControls\NodeControlsCollection.cs" />
+    <Compile Include="Tree\NodeControls\NodeControlValueEventArgs.cs" />
+    <Compile Include="Tree\NodeControls\NodeDecimalTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tree\NodeControls\NodeEventArgs.cs" />
+    <Compile Include="Tree\NodeControls\NodeIcon.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tree\NodeControls\NodeIntegerTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tree\NodeControls\NodeNumericUpDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tree\NodeControls\NodePlusMinus.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tree\NodeControls\NodeStateIcon.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tree\NodeControls\NodeTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tree\TreeHelper\ResourceHelper.cs" />
+    <Compile Include="Tree\SortedTreeModel.cs" />
+    <Compile Include="Tree\TreeColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tree\TreeColumnCollection.cs" />
+    <Compile Include="Tree\TreeColumnEventArgs.cs" />
+    <Compile Include="Tree\TreeHelper\StringCollectionEditor.cs" />
+    <Compile Include="Tree\TreeHelper\TextHelper.cs" />
+    <Compile Include="Tree\TreeHelper\WorkItem.cs" />
+    <Compile Include="Tree\TreeHelper\WorkItemStatus.cs" />
+    <Compile Include="Tree\TreeListAdapter.cs" />
+    <Compile Include="Tree\TreeModel.cs" />
+    <Compile Include="Tree\TreeModelBase.cs" />
+    <Compile Include="Tree\TreeModelEventArgs.cs" />
+    <Compile Include="Tree\TreeNodeAdv.cs" />
+    <Compile Include="Tree\TreeNodeAdvMouseEventArgs.cs" />
+    <Compile Include="Tree\TreePath.cs" />
+    <Compile Include="Tree\TreePathEventArgs.cs" />
+    <Compile Include="Tree\TreeViewAdv.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tree\TreeViewAdv.Designer.cs">
+      <DependentUpon>TreeViewAdv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tree\TreeViewAdv.Draw.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tree\TreeViewAdv.Editor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tree\TreeViewAdv.Input.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tree\TreeViewAdv.Properties.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tree\TreeViewAdvCancelEventArgs.cs" />
+    <Compile Include="Tree\TreeViewAdvEventArgs.cs" />
+    <Compile Include="Tree\TreeViewRowDrawEventArgs.cs" />
+    <Compile Include="VistaMenuControl\VistaMenuControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VistaMenuControl\VistaMenuControl.designer.cs">
+      <DependentUpon>VistaMenuControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VistaMenuControl\VistaMenuItem.cs" />
+    <Compile Include="VistaMenuControl\VistaMenuItems.cs" />
+    <Compile Include="XPander\BasePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XPander\CaptionStyle.cs" />
+    <Compile Include="XPander\ColorScheme.cs" />
+    <Compile Include="XPander\ColorSchemeChangeEventArgs.cs" />
+    <Compile Include="XPander\Constants.cs" />
+    <Compile Include="XPander\CustomColors.cs" />
+    <Compile Include="XPander\CustomPanelColors.cs" />
+    <Compile Include="XPander\CustomXPanderPanelColors.cs" />
+    <Compile Include="XPander\DisplayInformation.cs" />
+    <Compile Include="XPander\HoverState.cs" />
+    <Compile Include="XPander\HoverStateChangeEventArgs.cs" />
+    <Compile Include="XPander\IPanel.cs" />
+    <Compile Include="XPander\Panel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XPander\Panel.Designer.cs">
+      <DependentUpon>Panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XPander\PanelColors.cs" />
+    <Compile Include="XPander\PanelColorsBlack.cs" />
+    <Compile Include="XPander\PanelColorsBlue.cs" />
+    <Compile Include="XPander\PanelColorsBse.cs" />
+    <Compile Include="XPander\PanelColorsOffice.cs" />
+    <Compile Include="XPander\PanelColorsOffice2007Black.cs" />
+    <Compile Include="XPander\PanelColorsOffice2007Blue.cs" />
+    <Compile Include="XPander\PanelColorsOffice2007Silver.cs" />
+    <Compile Include="XPander\PanelColorsRed.cs" />
+    <Compile Include="XPander\PanelSettingsManager.cs" />
+    <Compile Include="XPander\PanelStyle.cs" />
+    <Compile Include="XPander\PanelStyleChangeEventArgs.cs" />
+    <Compile Include="XPander\UseAntiAlias.cs" />
+    <Compile Include="XPander\UseClearTypeGridFit.cs" />
+    <Compile Include="XPander\XPanderPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XPander\XPanderPanel.Designer.cs">
+      <DependentUpon>XPanderPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XPander\XPanderPanelList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XPander\XPanderPanelList.Designer.cs">
+      <DependentUpon>XPanderPanelList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XPander\XPanderStateChangeEventArgs.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.VisualBasic.PowerPacks.10.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Visual Basic PowerPacks 10.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tree\NodeControls\ClassDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChevronDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChevronLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChevronRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChevronUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closePanel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dvsplit.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folderclosed.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GripNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leaf.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading_icon" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ScrollBarArrowDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uncheck.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unknown.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NavigationBar\img\Down.png" />
+    <Content Include="NavigationBar\img\Up.png" />
+    <Content Include="NavigationBar\NaviBar.bmp" />
+    <Content Include="NavigationBar\NaviGroup.bmp" />
+    <None Include="NavigationBar\Design\ClassDiagram02.cd" />
+    <None Include="Resources\Up.png" />
+    <None Include="Resources\Down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Skyray.API\Skyray.API.csproj">
+      <Project>{535A288C-29B8-4E94-8815-1F56F7638744}</Project>
+      <Name>Skyray.API</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,32 @@
+C:\Users\yaohongjin\Downloads\8000-222\Release\Skyray.Thick.exe.config
+C:\Users\yaohongjin\Downloads\8000-222\Release\Skyray.Thick.exe.manifest
+C:\Users\yaohongjin\Downloads\8000-222\Release\Skyray.Thick.application
+C:\Users\yaohongjin\Downloads\8000-222\Release\Skyray.Thick.exe
+C:\Users\yaohongjin\Downloads\8000-222\Release\Skyray.Thick.pdb
+C:\Users\yaohongjin\Downloads\8000-222\B Sourcecode\Skyray.EDX\Skyary.Thick\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\yaohongjin\Downloads\8000-222\B Sourcecode\Skyray.EDX\Skyary.Thick\obj\x86\Release\Skyray.Thick.FrmLoading.resources
+C:\Users\yaohongjin\Downloads\8000-222\B Sourcecode\Skyray.EDX\Skyary.Thick\obj\x86\Release\Skyray.Thick.FrmThickNew.resources
+C:\Users\yaohongjin\Downloads\8000-222\B Sourcecode\Skyray.EDX\Skyary.Thick\obj\x86\Release\Skyray.Thick.FrmThick.resources
+C:\Users\yaohongjin\Downloads\8000-222\B Sourcecode\Skyray.EDX\Skyary.Thick\obj\x86\Release\Skyray.Thick.Properties.Resources.resources
+C:\Users\yaohongjin\Downloads\8000-222\B Sourcecode\Skyray.EDX\Skyary.Thick\obj\x86\Release\Skyary.Thick.csproj.GenerateResource.Cache
+C:\Users\yaohongjin\Downloads\8000-222\B Sourcecode\Skyray.EDX\Skyary.Thick\obj\x86\Release\Skyray.Thick.TrustInfo.xml
+C:\Users\yaohongjin\Downloads\8000-222\B Sourcecode\Skyray.EDX\Skyary.Thick\obj\x86\Release\Skyray.Thick.exe.manifest
+C:\Users\yaohongjin\Downloads\8000-222\B Sourcecode\Skyray.EDX\Skyary.Thick\obj\x86\Release\Skyray.Thick.application
+C:\Users\yaohongjin\Downloads\8000-222\B Sourcecode\Skyray.EDX\Skyary.Thick\obj\x86\Release\Skyray.Thick.exe
+C:\Users\yaohongjin\Downloads\8000-222\B Sourcecode\Skyray.EDX\Skyary.Thick\obj\x86\Release\Skyray.Thick.pdb
+D:\三合一\Release\Skyray.Thick.exe.config
+D:\三合一\B Sourcecode\Skyray.EDX\Skyary.Thick\obj\x86\Release\Skyray.Thick.exe
+D:\三合一\B Sourcecode\Skyray.EDX\Skyary.Thick\obj\x86\Release\Skyray.Thick.pdb
+D:\三合一\Release\Skyray.Thick.exe.manifest
+D:\三合一\Release\Skyray.Thick.application
+D:\三合一\Release\Skyray.Thick.exe
+D:\三合一\Release\Skyray.Thick.pdb
+D:\三合一\B Sourcecode\Skyray.EDX\Skyary.Thick\obj\x86\Release\ResolveAssemblyReference.cache
+D:\三合一\B Sourcecode\Skyray.EDX\Skyary.Thick\obj\x86\Release\Skyray.Thick.FrmLoading.resources
+D:\三合一\B Sourcecode\Skyray.EDX\Skyary.Thick\obj\x86\Release\Skyray.Thick.FrmThickNew.resources
+D:\三合一\B Sourcecode\Skyray.EDX\Skyary.Thick\obj\x86\Release\Skyray.Thick.FrmThick.resources
+D:\三合一\B Sourcecode\Skyray.EDX\Skyary.Thick\obj\x86\Release\Skyray.Thick.Properties.Resources.resources
+D:\三合一\B Sourcecode\Skyray.EDX\Skyary.Thick\obj\x86\Release\Skyary.Thick.csproj.GenerateResource.Cache
+D:\三合一\B Sourcecode\Skyray.EDX\Skyary.Thick\obj\x86\Release\Skyray.Thick.TrustInfo.xml
+D:\三合一\B Sourcecode\Skyray.EDX\Skyary.Thick\obj\x86\Release\Skyray.Thick.exe.manifest
+D:\三合一\B Sourcecode\Skyray.EDX\Skyary.Thick\obj\x86\Release\Skyray.Thick.application

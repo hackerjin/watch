@@ -1,0 +1,535 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Skyray.UC.BalanceSplitter" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAYAAAAAgAAAAAAAgAAgAAUAAAIAAAIAAAAAAgQAAA=</HashCode>
+      <FileName>Common\BalanceSplitter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.Default" Collapsed="true">
+    <Position X="14.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AICgAACAAAIAAAAAAAAAAAQAgAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>Common\Default.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.DGVCellDrawingEventArgs" Collapsed="true">
+    <Position X="16.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAgAAAAAAAAAACQAAAAAAIAAAEAAAAAAA=</HashCode>
+      <FileName>Common\DGVPrinter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.Extensions" Collapsed="true">
+    <Position X="12.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\DGVPrinter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.DGVPrinter" Collapsed="true">
+    <Position X="18" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>XEsqZ5+H8k4kSEBjC+gP6skhDAixMjwg/hU70EQABic=</HashCode>
+      <FileName>Common\DGVPrinter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.DifferenceDevice" Collapsed="true">
+    <Position X="19.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAACBIEAgAAAQAECDAAAAIAEBAAAABAEgAAAAgAAAAA=</HashCode>
+      <FileName>Common\DifferenceDevice.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.EDX3000" Collapsed="true">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABSgQQACAATCCAAAQCIA4ACAAEAABCwABCABABFkQ=</HashCode>
+      <FileName>Common\EDX3000.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.EventDelegate" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\EventDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.AutoAnalysisClass" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAAQAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\EventDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.ExceptClientGrobal" Collapsed="true">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CALiEAI0AAAIhgAwAIiAAgSgSAAAIBGAFkPIIACAhFg=</HashCode>
+      <FileName>Common\ExceptClientGrobal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.LangHelper" Collapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>Common\GP.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.ThreadInfo" Collapsed="true">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQAAAEgAAAAAAAAAEAAAAIAAJAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\Helper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.EDXRFHelper" Collapsed="true">
+    <Position X="21.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIQgAAAAAQAAAAAAIAAAAAAAAAAAABAAQiAICAA=</HashCode>
+      <FileName>Common\Helper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.CustomExceptionHandler" Collapsed="true">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\Helper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.CalcFwhm" Collapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAACBIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\Helper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.InitSysParams" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAACAAAAAAAAAAIAAABAAIAAACAAABAAA=</HashCode>
+      <FileName>Common\InitSysParams.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.InterfaceClass" Collapsed="true">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>aQoNWiI0DiGCzFiEEllA0Cp4PoO9QgTSwQtjRBM57mU=</HashCode>
+      <FileName>Common\InterfaceClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.MediumAccess" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAC4AgIwAAAAgAAAEAgAAgAACAEAAAoAwQEBAAgCgBA=</HashCode>
+      <FileName>Common\MediumAccess.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Skyray.UC.ProgressInfo" Collapsed="true">
+    <Position X="18" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAgSAAAAAEAAAAAAAAggAAAAEAACAAAAgAAAAAAA=</HashCode>
+      <FileName>Common\ProgressInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.Rohs" Collapsed="true">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAQAoAACAAAAAAAAiACGAEAAAACgAgCAAAQAEA=</HashCode>
+      <FileName>Common\Rohs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.Thick" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CMAAQrBCBmCgSiSAoYApbiAgDIuMoiRO4AgyAADACgI=</HashCode>
+      <FileName>Common\Thick.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.XRF" Collapsed="true">
+    <Position X="3.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAQgAABgAACACAAEACQCIAJAEEAABCwAgiAAIAAAA=</HashCode>
+      <FileName>Common\XRF.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.ElementTableAtom" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EgQCQAgIgCwABAAQAMiBAsAKAABCQEQAQIAIAEIAKgA=</HashCode>
+      <FileName>ElementTableAtom.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.FrmAbout" Collapsed="true">
+    <Position X="14.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACCCCAAAAAAECAAIACAAAhAEAAAAAAAAARAAQ=</HashCode>
+      <FileName>FrmAbout.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.FrmCondition" Collapsed="true">
+    <Position X="16.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ISAQoZAAADNKKTfZBeqUYAILEAAsZEAAABIIIAAAEAY=</HashCode>
+      <FileName>FrmCondition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.FrmDevice" Collapsed="true">
+    <Position X="18" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>Wiujk8CAAHILixOr20uEh0irwBQy53+m5B16mxERhic=</HashCode>
+      <FileName>FrmDevice.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.FrmDialog" Collapsed="true">
+    <Position X="19.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAACIAAAAAAICAAAICgAAAAAQAAAIAAAAAAAg=</HashCode>
+      <FileName>FrmDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.FrmElementTable" Collapsed="true">
+    <Position X="21.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EUAAAkAEACISgHAAEF6oAIEOBAJEhFwKACAIQQAAAJI=</HashCode>
+      <FileName>FrmElementTable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.FrmGridParams" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IABhAQAAhCABAAAYIASEIAISAAgwUAQAEAICAAAABAE=</HashCode>
+      <FileName>FrmGridParams.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.FrmLogon" Collapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAACAACACAAIAACAACAAAACCCgAAAgAAAIAAAEQAAg=</HashCode>
+      <FileName>FrmLogon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.FrmMeasureResult" Collapsed="true">
+    <Position X="11" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAQAAAAAIjAIAgCQUACBAEAKSCAACEAAABIBAQAEAAQ=</HashCode>
+      <FileName>FrmMeasureResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.FrmMeasureSetting" Collapsed="true">
+    <Position X="12.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAQAAACAAAAAAAACABBACEIAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>FrmMeasureSetting.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.FrmSampleInfo" Collapsed="true">
+    <Position X="14.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAADAAACRAAACQAAoDAAAIAARAIIAAAAAIAAE=</HashCode>
+      <FileName>FrmSampleInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.FrmSelectLayer" Collapsed="true">
+    <Position X="16.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAACAAAAEAAACAAMADAAAAAkABAAAQAAAAAgA=</HashCode>
+      <FileName>FrmSelectLayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.FrmSetAdjustPointsDistance" Collapsed="true">
+    <Position X="18" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIBAACAAEAkAAACAAEICAAAAABBACAAAAQAAAAA=</HashCode>
+      <FileName>FrmSetAdjustPointsDistance.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.FrmStatisticsResult" Collapsed="true">
+    <Position X="19.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BIAAAEAABCAACEAAAQjAAAACAAAAAAIAAAAQAQEEAAA=</HashCode>
+      <FileName>FrmStatisticsResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.FrmUser" Collapsed="true">
+    <Position X="21.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAQAAACAAAAAAAADIABICBAAAgAQCAwKIAAAEACA=</HashCode>
+      <FileName>FrmUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.MainForm" Collapsed="true">
+    <Position X="11" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>REQENAqQCjIcAAAAKFWAkCCGA2IJEAjAAkAAGQAQEwE=</HashCode>
+      <FileName>MainForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.MatchForm" Collapsed="true">
+    <Position X="12.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAACAAAAAAAACCAAACAAAQACAIAABABAQAAAA=</HashCode>
+      <FileName>MatchForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.NewWorkSpec" Collapsed="true">
+    <Position X="16.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>9AIAAZAAxThAgCEAEgCExUgDQMKIBgABcIIAAVCIQgQ=</HashCode>
+      <FileName>NewWorkSpec.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.SelectSample" Collapsed="true">
+    <Position X="21.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>sQBKS1EAoDFABCRADImAAACGgBBRQAACgIAEAaCKBgU=</HashCode>
+      <FileName>SelectSample.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.UCAnalysisParam" Collapsed="true">
+    <Position X="11" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACQCAAEAAICAAMACAAAAAEAAgAAIAAAAAAA=</HashCode>
+      <FileName>UCAnalysisParam.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.UCBasicControl" Collapsed="true">
+    <Position X="12.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABCACEFACABQAAoAADAAAAGAhggAAAAAQAAAAAAQAA=</HashCode>
+      <FileName>UCBasicControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.UCCalcIntensity" Collapsed="true">
+    <Position X="14.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAQAAACAAAACAAQwAAABAIAIAAAAAAE=</HashCode>
+      <FileName>UCCalcIntensity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.UCCalcResolution" Collapsed="true">
+    <Position X="16.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEBCAAAAAAEADAAAACAAAQAEAAAACAAIAAAgA=</HashCode>
+      <FileName>UCCalcResolution.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.UCCameraControl" Collapsed="true">
+    <Position X="18" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oJWI0AGCRKKSFOSQIoGIBhCSJABMAoGoYENqC6AISgg=</HashCode>
+      <FileName>UCCameraControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.UCCoeeParam" Collapsed="true">
+    <Position X="19.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAACACAAEAAICAAIACAAAAQEAAAQAIAAAAAAA=</HashCode>
+      <FileName>UCCoeeParam.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.UCComputeIntensity" Collapsed="true">
+    <Position X="21.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAUAAAKAAEAKAABACEEAAAIAAEAAAAA=</HashCode>
+      <FileName>UCComputeIntensity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.UCCurve" Collapsed="true">
+    <Position X="7.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kkEAIoIAADIIIUCDBCCAAAASAAAAgAEKIAEAAAADAAY=</HashCode>
+      <FileName>UCCurve.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.UCCustomField" Collapsed="true">
+    <Position X="9.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIIAAoAAADACIABAAICAAAACAAAAwBACAIACAAIAAAI=</HashCode>
+      <FileName>UCCustomField.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.UCCustomStandard" Collapsed="true">
+    <Position X="11" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AMABAgBQADAAAAuAAgCAEAAqAQiAwlACAAAAgAAAASY=</HashCode>
+      <FileName>UCCustomStandard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.UCEditData" Collapsed="true">
+    <Position X="12.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>4PEEl4AGAHhOGpmhjBSIkcAqMkAghNeWzuBSAoYhoNc=</HashCode>
+      <FileName>UCEditData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.UCElement" Collapsed="true">
+    <Position X="14.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>+aAGIsAAEDCJQhPRiIuEIAACQAZEwFEDqKAIsAEBgB4=</HashCode>
+      <FileName>UCElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.UCHistoryRecord" Collapsed="true">
+    <Position X="16.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAUTAAAAGIBDAgAQACBAEMCMQAFBQQACgAAEQAEIAA=</HashCode>
+      <FileName>UCHistoryRecord.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.UCLanguage" Collapsed="true">
+    <Position X="18" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAgAAIICCGgAIEBoCAAAGCoEAAAAIAgAARAAAQAAA=</HashCode>
+      <FileName>UCLanguage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.UCMoveWorksStation" Collapsed="true">
+    <Position X="19.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gBWAkAFARCIQkOCAIoOIBhACMAEMAgAgYEFoA6AISAg=</HashCode>
+      <FileName>UCMoveWorksStation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.UCOptimization" Collapsed="true">
+    <Position X="21.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAEAA8CAACAAQAEAAACBAAACAAABwFACAwAAABACAAI=</HashCode>
+      <FileName>UCOptimization.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.UCPipeTime" Collapsed="true">
+    <Position X="7.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAQAAAAACAAAACAAAAAAAgAAAAAABAAAA=</HashCode>
+      <FileName>UCPipeTime.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.UCPreHeatParams" Collapsed="true">
+    <Position X="9.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAACAAAAEAAACAAMACAAQAAEgAAAAAAAAAgAA=</HashCode>
+      <FileName>UCPreHeatParams.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.UCPureElementsTable" Collapsed="true">
+    <Position X="11" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAQAAECIEgRAAABCCAAICQAAAgAQAAAIAAEAEAAA=</HashCode>
+      <FileName>UCPureElementsTable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.UCQualitative" Collapsed="true">
+    <Position X="12.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAASAAkgAAAACBCAACAABgAACAAAAAAAAEAAA=</HashCode>
+      <FileName>UCQualitative.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.UCQualityResult" Collapsed="true">
+    <Position X="14.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAgAACAAAAABkAAAAAAEIAgAA=</HashCode>
+      <FileName>UCQualityResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.UCRef" Collapsed="true">
+    <Position X="16.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAECEIAAADAgAAEAAIiAAAgCAAAAQBAgAIAwACIAAIA=</HashCode>
+      <FileName>UCRef.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.UCShape" Collapsed="true">
+    <Position X="18" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAgAAACQAAABAAAGAAIACAAEAwEACAIAIAACAAAI=</HashCode>
+      <FileName>UCShape.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.UCSmartGraphic" Collapsed="true">
+    <Position X="19.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAKAAYAMIAgDAAACCAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>UCSmartGraphic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.UCStatusInfo" Collapsed="true">
+    <Position X="21.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAQBCAAEAEAAACAAABCAAAEACAAEAAAAAAAAAA=</HashCode>
+      <FileName>UCStatusInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.UCSupplier" Collapsed="true">
+    <Position X="7.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAACgAAACQAAAAIAAGAAIACEAAAwEACAIAAAgAAAAI=</HashCode>
+      <FileName>UCSupplier.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.UCWorkRegion" Collapsed="true">
+    <Position X="9.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABQAAAACAAAAAIAACACAACEAAAAAAAAQCAAAAAAQA=</HashCode>
+      <FileName>UCWorkRegion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.Properties.Resources" Collapsed="true">
+    <Position X="19.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EuIgAhEEAKACBCAgQAQdMAgAAQIsAAAwCAAAAAAmAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skyray.UC.Properties.Settings" Collapsed="true">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="Skyray.UC.ElemTableItem" Collapsed="true">
+    <Position X="7.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAABAAAQAAAAAAgAAAAAAAAAAAAI=</HashCode>
+      <FileName>ElementTableAtom.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="Skyray.UC.MatchModel" Collapsed="true">
+    <Position X="9.25" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Common\DifferenceDevice.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Skyray.UC.AddSpectrumType" Collapsed="true">
+    <Position X="7.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAABAAAAAAAAAAAAAAAAAAAAAAEAACgAAAAAAAAAAA=</HashCode>
+      <FileName>Common\DifferenceDevice.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="Skyray.UC.CellOwnerDrawEventHandler" Collapsed="true">
+    <Position X="9.25" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\DGVPrinter.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Skyray.UC.StopEnableControl" Collapsed="true">
+    <Position X="11" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UCMoveWorksStation.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Skyray.UC.CellClickElement" Collapsed="true">
+    <Position X="7.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UCQualitative.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="宋体" Size="9" />
+</ClassDiagram>

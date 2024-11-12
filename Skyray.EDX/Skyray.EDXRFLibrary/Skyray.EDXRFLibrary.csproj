@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3BB2CC20-8998-400E-A002-EF5D202CA4DF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Skyray.EDXRFLibrary</RootNamespace>
+    <AssemblyName>Skyray.EDXRFLibrary</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>edx.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>..\..\..\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.TeamSystem.Data.UnitTesting, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.SQLite, Version=1.0.66.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Atoms.cs" />
+    <Compile Include="BaseMessage.cs" />
+    <Compile Include="Define\AreaDensity.cs" />
+    <Compile Include="Define\BaseObject.cs" />
+    <Compile Include="Define\CalibrationParam.cs" />
+    <Compile Include="Define\Compounds.cs" />
+    <Compile Include="Define\Condition.cs" />
+    <Compile Include="Define\ContinuousResult.cs" />
+    <Compile Include="Define\DefinePureElement.cs" />
+    <Compile Include="Define\CustomField.cs" />
+    <Compile Include="Define\CustomStandard.cs" />
+    <Compile Include="Define\DemarcateEnergy.cs" />
+    <Compile Include="Define\ElementSpectrum.cs" />
+    <Compile Include="Define\Atom.cs" />
+    <Compile Include="Define\EncodeXY.cs" />
+    <Compile Include="Define\ExcitationConditions.cs" />
+    <Compile Include="Define\CurveElement.cs" />
+    <Compile Include="Define\Expunction.cs" />
+    <Compile Include="Define\HistoryElement.cs" />
+    <Compile Include="Define\HistoryRecord.cs" />
+    <Compile Include="Define\MatrixFun.cs" />
+    <Compile Include="Define\MultipleLanguage.cs" />
+    <Compile Include="Define\MultiPoints.cs" />
+    <Compile Include="Define\Optimiztion.cs" />
+    <Compile Include="Define\CompanyOthersInfo.cs" />
+    <Compile Include="Define\Oxide.cs" />
+    <Compile Include="Define\Param.cs" />
+    <Compile Include="Define\ElementList.cs" />
+    <Compile Include="Define\Peak.cs" />
+    <Compile Include="Define\PreHeatParams.cs" />
+    <Compile Include="Define\PureSpecParam.cs" />
+    <Compile Include="Define\PWDLock.cs" />
+    <Compile Include="Define\QualeElement.cs" />
+    <Compile Include="Define\Device.cs" />
+    <Compile Include="Define\RayTube.cs" />
+    <Compile Include="Define\ReferenceElement.cs" />
+    <Compile Include="Define\Shape.cs" />
+    <Compile Include="Define\BackupSpec.cs" />
+    <Compile Include="Define\Spec.cs" />
+    <Compile Include="Define\SpecAdditional.cs" />
+    <Compile Include="Define\SpecElementComposition.cs" />
+    <Compile Include="Define\SpecialRemoveSpec.cs" />
+    <Compile Include="Define\SpecificationElement.cs" />
+    <Compile Include="Define\SpecificationsCategory .cs" />
+    <Compile Include="Define\SpecificationsExample.cs" />
+    <Compile Include="Define\SpectrumData.cs" />
+    <Compile Include="Define\StandSample.cs" />
+    <Compile Include="Define\Supplier.cs" />
+    <Compile Include="Define\SurfaceSource.cs" />
+    <Compile Include="Define\SysConfig.cs" />
+    <Compile Include="Define\TitleIco.cs" />
+    <Compile Include="Define\WorkCurve.cs" />
+    <Compile Include="Define\WorkRegion.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="ExperienceCoeffs.cs" />
+    <Compile Include="ExtensionFunc.cs" />
+    <Compile Include="Func\ArithDllInterface.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Func\CustomField.Func.cs" />
+    <Compile Include="Func\ECWorkCurve.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Func\ElementList.Func.cs" />
+    <Compile Include="Func\ElementSpectrum.Func.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Func\FpWorkCurve.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Func\Intensity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Func\Spec.Fun.cs" />
+    <Compile Include="Func\ThWorkCurve.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Func\WorkCurve.Func.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Grade.cs" />
+    <Compile Include="Helper.cs" />
+    <Compile Include="Info.cs" />
+    <Compile Include="NativeWIN32.cs" />
+    <Compile Include="PopupKiller.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Define\Role.cs" />
+    <Compile Include="Define\User.cs" />
+    <Compile Include="SpecHelper.cs" />
+    <Compile Include="Spectrum\DAL\PlainTextDAL.cs" />
+    <Compile Include="Spectrum\Entity\DemarcateEnergyEntity.cs" />
+    <Compile Include="Spectrum\Entity\DeviceParameterEntity.cs" />
+    <Compile Include="Spectrum\DAL\FileDAL.cs" />
+    <Compile Include="Spectrum\Entity\InitParamsEntity.cs" />
+    <Compile Include="Spectrum\IDAL\ISpectrumDAL.cs" />
+    <Compile Include="Spectrum\Entity\SpecEntity.cs" />
+    <Compile Include="Spectrum\Entity\SpecListEntity.cs" />
+    <Compile Include="Spectrum\DAL\SQliteDAL.cs" />
+    <Compile Include="Spectrum\SerializeHelper.cs" />
+    <Compile Include="TxtFile.cs" />
+    <Compile Include="UpdateSpecImage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Define\ClassDiagram1.cd" />
+    <None Include="edx.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lephone.Data\Lephone.Data.csproj">
+      <Project>{25AFD300-493A-4553-B4DC-129D3A9022A8}</Project>
+      <Name>Lephone.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lephone.Util\Lephone.Util.csproj">
+      <Project>{F53E89FC-F364-4C7D-A20A-CACFBF11C196}</Project>
+      <Name>Lephone.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Update\caoyunhe.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

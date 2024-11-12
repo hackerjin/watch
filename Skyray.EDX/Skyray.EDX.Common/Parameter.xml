@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Parameter TotalRatio="5.5" bLeft="732" bRight="1040">
+  <System>
+    <PbCoeffA>1</PbCoeffA>
+    <PbCoeffB>0</PbCoeffB>
+    <CdCoeffA>1</CdCoeffA>
+    <CdCoeffB>0</CdCoeffB>
+    <PbLimit>100</PbLimit>
+    <CdSnCoeff>-0.0004</CdSnCoeff>
+    <PbabCoeff>0.7</PbabCoeff>
+    <HalfWidth>18</HalfWidth>
+    <PeakChannel>1105</PeakChannel>
+    <!--联测标记0为单测，1为联测-->
+    <PlasticContinuous>1</PlasticContinuous>
+    <MultiReport>1</MultiReport>
+    <!--初始化标记，1为根据当前初始化结果更新所有条件的放大倍数，0为只更新当前条件的放大倍数-->
+    <bInitialize>1</bInitialize>
+    <EnergyKa>5895</EnergyKa>
+    <EnergyKb>6492</EnergyKb>
+  </System>
+    <Element>
+      <ElementName>Fe</ElementName>
+      <Left>321</Left>
+      <Right>341</Right>
+      <CurType>1</CurType>
+    </Element>
+    <Element>
+      <ElementName>Cu</ElementName>
+      <Left>402</Left>
+      <Right>422</Right>
+      <CurType>2</CurType>
+    </Element>
+    <Element>
+      <ElementName>Cl</ElementName>
+      <Left>135</Left>
+      <Right>155</Right>
+    </Element>
+    <Element>
+      <ElementName>Cr</ElementName>
+      <Left>272</Left>
+      <Right>292</Right>
+    </Element>
+    <Element>
+      <ElementName>Sn</ElementName>
+      <Left>1247</Left>
+      <Right>1267</Right>
+      <CurType>3</CurType>
+    </Element>
+    <Element>
+      <ElementName>Zn</ElementName>
+      <Left>431</Left>
+      <Right>451</Right>
+      <CurType>2</CurType>
+    </Element>
+    <Element>
+      <ElementName>Br</ElementName>
+      <Left>593</Left>
+      <Right>613</Right>
+    </Element>
+    <Element>
+      <ElementName>Ni</ElementName>
+      <Left>374</Left>
+      <Right>394</Right>
+    </Element>
+  <Element>
+    <ElementName>Ca</ElementName>
+    <Left>374</Left>
+    <Right>394</Right>
+  </Element>
+  <Element>
+    <ElementName>Ti</ElementName>
+    <Left>374</Left>
+    <Right>394</Right>
+  </Element>
+  <match>
+    <!--金属比值修改-->
+    <Metal> 
+      <Node elementName="Cl" matterName="FeCr" ratio="0.3" caculate="1" condition="Fe" direction="1" cureType="1"></Node>
+      <Node elementName="Sn" matterName="SOLDER" ratio="0.2" caculate="2" direction="1" cureType="3"></Node>
+    </Metal>
+    <!--非金属比值修改-->
+    <NoMetal>
+      <Node elementName="Ca" matterName="HighCa" ratio="0.6" caculate="1" direction="1" cureType="0"></Node>
+      <Node elementName="Ti" matterName="HighTi" ratio="0.6" caculate="1" direction="1" cureType="0"></Node>
+      <Node elementName="Cl" matterName="PVC-Cr" ratio="0.2" caculate="1" direction="1" cureType="0"> </Node>
+      <Node elementName="Cl" matterName="workCurveCr" ratio="0.2" caculate="1" direction="0" cureType="0"></Node>
+      <Node elementName="Cl" matterName="PVC" ratio="0.2" caculate="1" direction="1" cureType="4"> </Node>
+      <Node elementName="Br" matterName="HighBr" ratio="0.6" caculate="1" direction="1" cureType="4"></Node>
+      <Node elementName="Cl" matterName="PE" ratio="0.2" caculate="1" direction="0" cureType="4"></Node>
+      <Default elementName="Cl" matterName="PVC" ratio="0.2" caculate="1" direction="1" cureType="4"> </Default>
+      <Default elementName="Cl" matterName="PE" ratio="0.2" caculate="1" direction="0" cureType="4"></Default>
+    </NoMetal>
+  </match>
+  
+</Parameter>

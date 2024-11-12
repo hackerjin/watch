@@ -1,0 +1,22 @@
+C:\Users\yaohongjin\Downloads\8000-222\Release\Skyray.Controls.Extension.dll
+C:\Users\yaohongjin\Downloads\8000-222\Release\Skyray.Controls.Extension.pdb
+C:\Users\yaohongjin\Downloads\8000-222\B Sourcecode\Skyray.EDX\Skyray.Controls.Extension\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\yaohongjin\Downloads\8000-222\B Sourcecode\Skyray.EDX\Skyray.Controls.Extension\obj\x86\Release\Skyray.Controls.Extension.Resource.resources
+C:\Users\yaohongjin\Downloads\8000-222\B Sourcecode\Skyray.EDX\Skyray.Controls.Extension\obj\x86\Release\Skyray.Controls.Extension.TrendChart.resources
+C:\Users\yaohongjin\Downloads\8000-222\B Sourcecode\Skyray.EDX\Skyray.Controls.Extension\obj\x86\Release\Skyray.Controls.Extension.ElementTableAtom.resources
+C:\Users\yaohongjin\Downloads\8000-222\B Sourcecode\Skyray.EDX\Skyray.Controls.Extension\obj\x86\Release\Skyray.Controls.Extension.FrmAddPeak.resources
+C:\Users\yaohongjin\Downloads\8000-222\B Sourcecode\Skyray.EDX\Skyray.Controls.Extension\obj\x86\Release\Skyray.Controls.Extension.XRFChart.resources
+C:\Users\yaohongjin\Downloads\8000-222\B Sourcecode\Skyray.EDX\Skyray.Controls.Extension\obj\x86\Release\Skyray.Controls.Extension.csproj.GenerateResource.Cache
+C:\Users\yaohongjin\Downloads\8000-222\B Sourcecode\Skyray.EDX\Skyray.Controls.Extension\obj\x86\Release\Skyray.Controls.Extension.dll
+C:\Users\yaohongjin\Downloads\8000-222\B Sourcecode\Skyray.EDX\Skyray.Controls.Extension\obj\x86\Release\Skyray.Controls.Extension.pdb
+D:\三合一\Release\Skyray.Controls.Extension.dll
+D:\三合一\Release\Skyray.Controls.Extension.pdb
+D:\三合一\B Sourcecode\Skyray.EDX\Skyray.Controls.Extension\obj\x86\Release\ResolveAssemblyReference.cache
+D:\三合一\B Sourcecode\Skyray.EDX\Skyray.Controls.Extension\obj\x86\Release\Skyray.Controls.Extension.Resource.resources
+D:\三合一\B Sourcecode\Skyray.EDX\Skyray.Controls.Extension\obj\x86\Release\Skyray.Controls.Extension.TrendChart.resources
+D:\三合一\B Sourcecode\Skyray.EDX\Skyray.Controls.Extension\obj\x86\Release\Skyray.Controls.Extension.ElementTableAtom.resources
+D:\三合一\B Sourcecode\Skyray.EDX\Skyray.Controls.Extension\obj\x86\Release\Skyray.Controls.Extension.FrmAddPeak.resources
+D:\三合一\B Sourcecode\Skyray.EDX\Skyray.Controls.Extension\obj\x86\Release\Skyray.Controls.Extension.XRFChart.resources
+D:\三合一\B Sourcecode\Skyray.EDX\Skyray.Controls.Extension\obj\x86\Release\Skyray.Controls.Extension.csproj.GenerateResource.Cache
+D:\三合一\B Sourcecode\Skyray.EDX\Skyray.Controls.Extension\obj\x86\Release\Skyray.Controls.Extension.dll
+D:\三合一\B Sourcecode\Skyray.EDX\Skyray.Controls.Extension\obj\x86\Release\Skyray.Controls.Extension.pdb

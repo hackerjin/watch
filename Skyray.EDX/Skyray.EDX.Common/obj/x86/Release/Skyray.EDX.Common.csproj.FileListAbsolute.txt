@@ -1,0 +1,18 @@
+C:\Users\yaohongjin\Downloads\8000-222\Release\Skyray.EDX.Common.dll
+C:\Users\yaohongjin\Downloads\8000-222\Release\Skyray.EDX.Common.pdb
+C:\Users\yaohongjin\Downloads\8000-222\B Sourcecode\Skyray.EDX\Skyray.EDX.Common\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\yaohongjin\Downloads\8000-222\B Sourcecode\Skyray.EDX\Skyray.EDX.Common\obj\x86\Release\Interop.XRFNetLib.dll
+C:\Users\yaohongjin\Downloads\8000-222\B Sourcecode\Skyray.EDX\Skyray.EDX.Common\obj\x86\Release\Skyray.EDX.Common.csproj.ResolveComReference.cache
+C:\Users\yaohongjin\Downloads\8000-222\B Sourcecode\Skyray.EDX\Skyray.EDX.Common\obj\x86\Release\Skyray.EDX.Common.Properties.Resources.resources
+C:\Users\yaohongjin\Downloads\8000-222\B Sourcecode\Skyray.EDX\Skyray.EDX.Common\obj\x86\Release\Skyray.EDX.Common.csproj.GenerateResource.Cache
+C:\Users\yaohongjin\Downloads\8000-222\B Sourcecode\Skyray.EDX\Skyray.EDX.Common\obj\x86\Release\Skyray.EDX.Common.dll
+C:\Users\yaohongjin\Downloads\8000-222\B Sourcecode\Skyray.EDX\Skyray.EDX.Common\obj\x86\Release\Skyray.EDX.Common.pdb
+D:\三合一\Release\Skyray.EDX.Common.dll
+D:\三合一\Release\Skyray.EDX.Common.pdb
+D:\三合一\B Sourcecode\Skyray.EDX\Skyray.EDX.Common\obj\x86\Release\ResolveAssemblyReference.cache
+D:\三合一\B Sourcecode\Skyray.EDX\Skyray.EDX.Common\obj\x86\Release\Interop.XRFNetLib.dll
+D:\三合一\B Sourcecode\Skyray.EDX\Skyray.EDX.Common\obj\x86\Release\Skyray.EDX.Common.csproj.ResolveComReference.cache
+D:\三合一\B Sourcecode\Skyray.EDX\Skyray.EDX.Common\obj\x86\Release\Skyray.EDX.Common.Properties.Resources.resources
+D:\三合一\B Sourcecode\Skyray.EDX\Skyray.EDX.Common\obj\x86\Release\Skyray.EDX.Common.csproj.GenerateResource.Cache
+D:\三合一\B Sourcecode\Skyray.EDX\Skyray.EDX.Common\obj\x86\Release\Skyray.EDX.Common.dll
+D:\三合一\B Sourcecode\Skyray.EDX\Skyray.EDX.Common\obj\x86\Release\Skyray.EDX.Common.pdb

@@ -1,0 +1,10 @@
+C:\Users\yaohongjin\Downloads\8000-222\Release\Skyray.API.dll
+C:\Users\yaohongjin\Downloads\8000-222\Release\Skyray.API.pdb
+C:\Users\yaohongjin\Downloads\8000-222\B Sourcecode\Skyray.EDX\Skyray.API\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\yaohongjin\Downloads\8000-222\B Sourcecode\Skyray.EDX\Skyray.API\obj\x86\Release\Skyray.API.dll
+C:\Users\yaohongjin\Downloads\8000-222\B Sourcecode\Skyray.EDX\Skyray.API\obj\x86\Release\Skyray.API.pdb
+D:\三合一\Release\Skyray.API.dll
+D:\三合一\Release\Skyray.API.pdb
+D:\三合一\B Sourcecode\Skyray.EDX\Skyray.API\obj\x86\Release\ResolveAssemblyReference.cache
+D:\三合一\B Sourcecode\Skyray.EDX\Skyray.API\obj\x86\Release\Skyray.API.dll
+D:\三合一\B Sourcecode\Skyray.EDX\Skyray.API\obj\x86\Release\Skyray.API.pdb

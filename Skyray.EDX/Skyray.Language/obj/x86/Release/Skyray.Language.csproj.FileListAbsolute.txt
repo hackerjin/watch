@@ -1,0 +1,16 @@
+C:\Users\yaohongjin\Downloads\8000-222\Release\Skyray.Language.dll
+C:\Users\yaohongjin\Downloads\8000-222\Release\Skyray.Language.pdb
+C:\Users\yaohongjin\Downloads\8000-222\B Sourcecode\Skyray.EDX\Skyray.Language\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\yaohongjin\Downloads\8000-222\B Sourcecode\Skyray.EDX\Skyray.Language\obj\x86\Release\Skyray.Language.MultipleForm.resources
+C:\Users\yaohongjin\Downloads\8000-222\B Sourcecode\Skyray.EDX\Skyray.Language\obj\x86\Release\Skyray.Language.UCMultiple.resources
+C:\Users\yaohongjin\Downloads\8000-222\B Sourcecode\Skyray.EDX\Skyray.Language\obj\x86\Release\Skyray.Language.csproj.GenerateResource.Cache
+C:\Users\yaohongjin\Downloads\8000-222\B Sourcecode\Skyray.EDX\Skyray.Language\obj\x86\Release\Skyray.Language.dll
+C:\Users\yaohongjin\Downloads\8000-222\B Sourcecode\Skyray.EDX\Skyray.Language\obj\x86\Release\Skyray.Language.pdb
+D:\三合一\Release\Skyray.Language.dll
+D:\三合一\Release\Skyray.Language.pdb
+D:\三合一\B Sourcecode\Skyray.EDX\Skyray.Language\obj\x86\Release\ResolveAssemblyReference.cache
+D:\三合一\B Sourcecode\Skyray.EDX\Skyray.Language\obj\x86\Release\Skyray.Language.MultipleForm.resources
+D:\三合一\B Sourcecode\Skyray.EDX\Skyray.Language\obj\x86\Release\Skyray.Language.UCMultiple.resources
+D:\三合一\B Sourcecode\Skyray.EDX\Skyray.Language\obj\x86\Release\Skyray.Language.csproj.GenerateResource.Cache
+D:\三合一\B Sourcecode\Skyray.EDX\Skyray.Language\obj\x86\Release\Skyray.Language.dll
+D:\三合一\B Sourcecode\Skyray.EDX\Skyray.Language\obj\x86\Release\Skyray.Language.pdb

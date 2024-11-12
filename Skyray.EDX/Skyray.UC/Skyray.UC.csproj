@@ -1,0 +1,1785 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0F6E0BD2-4402-4B31-B798-56F3E94EEBE7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Skyray.UC</RootNamespace>
+    <AssemblyName>Skyray.UC</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>..\..\..\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CameraLib\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Controls, Version=2.2.5.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CameraLib\AForge.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging, Version=2.2.5.0, Culture=neutral, PublicKeyToken=ba8ddea9676ca48b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CameraLib\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL" />
+    <Reference Include="AForge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CameraLib\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Cells, Version=8.1.1.0, Culture=neutral, PublicKeyToken=00725b1ceb58d0a9, processorArchitecture=MSIL" />
+    <Reference Include="Aspose.Pdf, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Emgu.CV.UI, Version=3.2.0.2721, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Emgu.CV.3.2.0.2721\lib\net35\Emgu.CV.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.World, Version=3.2.0.2721, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Emgu.CV.3.2.0.2721\lib\net35\Emgu.CV.World.dll</HintPath>
+    </Reference>
+    <Reference Include="FtdAdapter, Version=1.11.0.0, Culture=neutral, PublicKeyToken=b5aba55fcbc8d946, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NModbus.1.11.0.0\lib\FtdAdapter.dll</HintPath>
+    </Reference>
+    <Reference Include="HardwareDog, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <HintPath>..\..\..\Release\HardwareDog.dll</HintPath>
+    </Reference>
+    <Reference Include="InTheHand.Net.Personal, Version=2.3.0.0, Culture=neutral, PublicKeyToken=ea38caa273134499, processorArchitecture=MSIL" />
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\log4net.1.2.10\lib\2.0\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Release\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Modbus, Version=1.11.0.0, Culture=neutral, PublicKeyToken=b5aba55fcbc8d946, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NModbus.1.11.0.0\lib\Modbus.dll</HintPath>
+    </Reference>
+    <Reference Include="Modbus.Extensions, Version=1.11.0.0, Culture=neutral, PublicKeyToken=b5aba55fcbc8d946, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NModbus.1.11.0.0\lib\Modbus.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=3.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.SQLite, Version=1.0.66.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Unme.Common, Version=1.1.0.0, Culture=neutral, PublicKeyToken=da57c01ae4598fdd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NModbus.1.11.0.0\lib\Unme.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ZedGraph, Version=5.1.5.17623, Culture=neutral, PublicKeyToken=cd91e0d261d1744a, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\BlueToothPrinter.cs" />
+    <Compile Include="Common\CSampleCal.cs" />
+    <Compile Include="Common\GBKEncoder.cs" />
+    <Compile Include="Common\IBatchTest.cs" />
+    <Compile Include="Common\IMediumAccess.cs" />
+    <Compile Include="Common\InitSysParams.cs" />
+    <Compile Include="Common\IntensityCorrect.cs" />
+    <Compile Include="Common\ReportThreadManage.cs" />
+    <Compile Include="Component1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Component1.Designer.cs">
+      <DependentUpon>Component1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdminPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdminPass.Designer.cs">
+      <DependentUpon>FrmAdminPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmComSel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmComSel.designer.cs">
+      <DependentUpon>FrmComSel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDeleteSpec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDeleteSpec.designer.cs">
+      <DependentUpon>FrmDeleteSpec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNewPointsName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNewPointsName.Designer.cs">
+      <DependentUpon>FrmNewPointsName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStaShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStaShow.designer.cs">
+      <DependentUpon>FrmStaShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeartMapImage.cs" />
+    <Compile Include="HeatPoint.cs" />
+    <Compile Include="MockDatasGen.cs" />
+    <Compile Include="ModbusTcp.cs" />
+    <Compile Include="UCCaculateParamSet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCCaculateParamSet.Designer.cs">
+      <DependentUpon>UCCaculateParamSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCCameraControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCCameraControl.Designer.cs">
+      <DependentUpon>UCCameraControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCDBSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCDBSetting.Designer.cs">
+      <DependentUpon>UCDBSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCDetectPointsSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCDetectPointsSetting.designer.cs">
+      <DependentUpon>UCDetectPointsSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCHeatMapList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCHeatMapList.Designer.cs">
+      <DependentUpon>UCHeatMapList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCInputPWD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UCInputPWD.Designer.cs">
+      <DependentUpon>UCInputPWD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcInitCalibrateParam.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcInitCalibrateParam.Designer.cs">
+      <DependentUpon>UcInitCalibrateParam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAuthorization.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmAuthorization.Designer.cs">
+      <DependentUpon>FrmAuthorization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCAdjustPureSpecLib.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCAdjustPureSpecLib.designer.cs">
+      <DependentUpon>UCAdjustPureSpecLib.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCDefinePureElem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCDefinePureElem.Designer.cs">
+      <DependentUpon>UCDefinePureElem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCEncoderValue.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCEncoderValue.designer.cs">
+      <DependentUpon>UCEncoderValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCPureSpecLib.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCPureSpecLib.designer.cs">
+      <DependentUpon>UCPureSpecLib.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCStop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UCStop.designer.cs">
+      <DependentUpon>UCStop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCSysSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCSysSettings.Designer.cs">
+      <DependentUpon>UCSysSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcTabParams.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcTabParams.designer.cs">
+      <DependentUpon>UcTabParams.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCThickCameraControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCThickCameraControl.Designer.cs">
+      <DependentUpon>UCThickCameraControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAboutIndia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmAboutIndia.Designer.cs">
+      <DependentUpon>FrmAboutIndia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAreaDensityUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAreaDensityUnit.Designer.cs">
+      <DependentUpon>FrmAreaDensityUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAutoDetection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAutoDetection.Designer.cs">
+      <DependentUpon>FrmAutoDetection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBatchTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBatchTest.Designer.cs">
+      <DependentUpon>FrmBatchTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBlueToothCfg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmBlueToothCfg.designer.cs">
+      <DependentUpon>FrmBlueToothCfg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmChangeSpInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmChangeSpInfo.Designer.cs">
+      <DependentUpon>FrmChangeSpInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCheckInCal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCheckInCal.Designer.cs">
+      <DependentUpon>FrmCheckInCal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGridParams.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmGridParams.designer.cs">
+      <DependentUpon>FrmGridParams.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHistoryColumnManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHistoryColumnManage.Designer.cs">
+      <DependentUpon>FrmHistoryColumnManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHotSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHotSet.Designer.cs">
+      <DependentUpon>FrmHotSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIndiaAuAlert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIndiaAuAlert.Designer.cs">
+      <DependentUpon>FrmIndiaAuAlert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLazer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmLazer.designer.cs">
+      <DependentUpon>FrmLazer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSampleTemplate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmSampleTemplate.Designer.cs">
+      <DependentUpon>FrmSampleTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSelectStandard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelectStandard.Designer.cs">
+      <DependentUpon>FrmSelectStandard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmShowNewCamer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShowNewCamer.Designer.cs">
+      <DependentUpon>FrmShowNewCamer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTip.designer.cs">
+      <DependentUpon>FrmTip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUncertainty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUncertainty.designer.cs">
+      <DependentUpon>FrmUncertainty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCSampleCal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCSampleCal.Designer.cs">
+      <DependentUpon>UCSampleCal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCSampleCalSet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCSampleCalSet.designer.cs">
+      <DependentUpon>UCSampleCalSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCSingStand.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCSingStand.Designer.cs">
+      <DependentUpon>UCSingStand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCSpecialSpec.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCSpecialSpec.Designer.cs">
+      <DependentUpon>UCSpecialSpec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCThinDatabase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCThinDatabase.Designer.cs">
+      <DependentUpon>UCThinDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCTrendElem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCTrendElem.designer.cs">
+      <DependentUpon>UCTrendElem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日本相关\FrmResultStandard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="日本相关\FrmResultStandard.Designer.cs">
+      <DependentUpon>FrmResultStandard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmScanPure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmScanPure.Designer.cs">
+      <DependentUpon>FrmScanPure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSelToCertainty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelToCertainty.Designer.cs">
+      <DependentUpon>FrmSelToCertainty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStatus.Designer.cs">
+      <DependentUpon>FrmStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日本相关\FrmStyle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="日本相关\FrmStyle.Designer.cs">
+      <DependentUpon>FrmStyle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCNameSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCNameSetting.Designer.cs">
+      <DependentUpon>UCNameSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSuperModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSuperModel.Designer.cs">
+      <DependentUpon>FrmSuperModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDeviceNewName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDeviceNewName.Designer.cs">
+      <DependentUpon>FrmDeviceNewName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListViewExampleProvider.cs" />
+    <Compile Include="ToolsNaviForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ToolsNaviForm.designer.cs">
+      <DependentUpon>ToolsNaviForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCBackUpAndRestore.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCBackUpAndRestore.Designer.cs">
+      <DependentUpon>UCBackUpAndRestore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCCaculateMatching.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCCaculateMatching.Designer.cs">
+      <DependentUpon>UCCaculateMatching.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCChamberMove.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCChamberMove.Designer.cs">
+      <DependentUpon>UCChamberMove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\BalanceSplitter.cs" />
+    <Compile Include="Common\DGVPrinter.cs" />
+    <Compile Include="Common\DifferenceDevice.cs" />
+    <Compile Include="Common\EventDelegate.cs" />
+    <Compile Include="Common\ExceptClientGrobal.cs" />
+    <Compile Include="Common\InterfaceClass.cs" />
+    <Compile Include="Common\GP.cs" />
+    <Compile Include="Common\MediumAccess.cs" />
+    <Compile Include="Common\ProgressInfo.cs" />
+    <Compile Include="Common\Thick.cs" />
+    <Compile Include="Common\ThickAccess.cs" />
+    <Compile Include="ElementTableAtom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ElementTableAtom.Designer.cs">
+      <DependentUpon>ElementTableAtom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCCaculateBits.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCCaculateBits.Designer.cs">
+      <DependentUpon>UCCaculateBits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCCoeeParamIntel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCCoeeParamIntel.Designer.cs">
+      <DependentUpon>UCCoeeParamIntel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCCompanyOthers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCCompanyOthers.Designer.cs">
+      <DependentUpon>UCCompanyOthers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCComponentMotor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCComponentMotor.Designer.cs">
+      <DependentUpon>UCComponentMotor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCComputeIntensity.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCComputeIntensity.Designer.cs">
+      <DependentUpon>UCComputeIntensity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDialog.Designer.cs">
+      <DependentUpon>FrmDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAbout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmAbout.Designer.cs">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogon.Designer.cs">
+      <DependentUpon>FrmLogon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMeasureResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMeasureResult.Designer.cs">
+      <DependentUpon>FrmMeasureResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMeasureSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmMeasureSetting.Designer.cs">
+      <DependentUpon>FrmMeasureSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSampleInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSampleInfo.Designer.cs">
+      <DependentUpon>FrmSampleInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSelectLayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelectLayer.Designer.cs">
+      <DependentUpon>FrmSelectLayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSetAdjustPointsDistance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmSetAdjustPointsDistance.designer.cs">
+      <DependentUpon>FrmSetAdjustPointsDistance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStatisticsResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStatisticsResult.Designer.cs">
+      <DependentUpon>FrmStatisticsResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewWorkSpec.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NewWorkSpec.Designer.cs">
+      <DependentUpon>NewWorkSpec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCAnalysisParam.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCAnalysisParam.Designer.cs">
+      <DependentUpon>UCAnalysisParam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCBasicControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCBasicControl.designer.cs">
+      <DependentUpon>UCBasicControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCCalcResolution.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCCalcResolution.Designer.cs">
+      <DependentUpon>UCCalcResolution.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCCoeeParam.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCCoeeParam.Designer.cs">
+      <DependentUpon>UCCoeeParam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCondition.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmCondition.Designer.cs">
+      <DependentUpon>FrmCondition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDevice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmDevice.Designer.cs">
+      <DependentUpon>FrmDevice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmElementTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmElementTable.Designer.cs">
+      <DependentUpon>FrmElementTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmUser.Designer.cs">
+      <DependentUpon>FrmUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Helper.cs" />
+    <Compile Include="MatchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MatchForm.designer.cs">
+      <DependentUpon>MatchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAdminPass.resx">
+      <DependentUpon>FrmAdminPass.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmComSel.resx">
+      <DependentUpon>FrmComSel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDeleteSpec.resx">
+      <DependentUpon>FrmDeleteSpec.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNewPointsName.resx">
+      <DependentUpon>FrmNewPointsName.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStaShow.resx">
+      <DependentUpon>FrmStaShow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCCaculateParamSet.resx">
+      <DependentUpon>UCCaculateParamSet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCCameraControl.resx">
+      <DependentUpon>UCCameraControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCDetectPointsSetting.resx">
+      <DependentUpon>UCDetectPointsSetting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCHeatMapList.resx">
+      <DependentUpon>UCHeatMapList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCInputPWD.resx">
+      <DependentUpon>UCInputPWD.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcInitCalibrateParam.resx">
+      <DependentUpon>UcInitCalibrateParam.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAuthorization.resx">
+      <DependentUpon>FrmAuthorization.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCAdjustPureSpecLib.resx">
+      <DependentUpon>UCAdjustPureSpecLib.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCDefinePureElem.resx">
+      <DependentUpon>UCDefinePureElem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCEncoderValue.resx">
+      <DependentUpon>UCEncoderValue.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCPureSpecLib.resx">
+      <DependentUpon>UCPureSpecLib.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCStop.resx">
+      <DependentUpon>UCStop.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCSysSettings.resx">
+      <DependentUpon>UCSysSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcTabParams.resx">
+      <DependentUpon>UcTabParams.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCThickCameraControl.resx">
+      <DependentUpon>UCThickCameraControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAboutIndia.resx">
+      <DependentUpon>FrmAboutIndia.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAreaDensityUnit.resx">
+      <DependentUpon>FrmAreaDensityUnit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAutoDetection.resx">
+      <DependentUpon>FrmAutoDetection.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBatchTest.resx">
+      <DependentUpon>FrmBatchTest.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBlueToothCfg.resx">
+      <DependentUpon>FrmBlueToothCfg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmChangeSpInfo.resx">
+      <DependentUpon>FrmChangeSpInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCheckInCal.resx">
+      <DependentUpon>FrmCheckInCal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGridParams.resx">
+      <DependentUpon>FrmGridParams.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHistoryColumnManage.resx">
+      <DependentUpon>FrmHistoryColumnManage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHotSet.resx">
+      <DependentUpon>FrmHotSet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIndiaAuAlert.resx">
+      <DependentUpon>FrmIndiaAuAlert.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLazer.resx">
+      <DependentUpon>FrmLazer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSampleTemplate.resx">
+      <DependentUpon>FrmSampleTemplate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSelectStandard.resx">
+      <DependentUpon>FrmSelectStandard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShowNewCamer.resx">
+      <DependentUpon>FrmShowNewCamer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTip.resx">
+      <DependentUpon>FrmTip.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUncertainty.resx">
+      <DependentUpon>FrmUncertainty.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCSampleCal.resx">
+      <DependentUpon>UCSampleCal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCSampleCalSet.resx">
+      <DependentUpon>UCSampleCalSet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCSingStand.resx">
+      <DependentUpon>UCSingStand.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCSpecialSpec.resx">
+      <DependentUpon>UCSpecialSpec.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCThinDatabase.resx">
+      <DependentUpon>UCThinDatabase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCTrendElem.resx">
+      <DependentUpon>UCTrendElem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日本相关\FrmResultStandard.resx">
+      <DependentUpon>FrmResultStandard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmScanPure.resx">
+      <DependentUpon>FrmScanPure.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSelToCertainty.resx">
+      <DependentUpon>FrmSelToCertainty.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStatus.resx">
+      <DependentUpon>FrmStatus.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日本相关\FrmStyle.resx">
+      <DependentUpon>FrmStyle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCNameSetting.resx">
+      <DependentUpon>UCNameSetting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSuperModel.resx">
+      <DependentUpon>FrmSuperModel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDeviceNewName.resx">
+      <DependentUpon>FrmDeviceNewName.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolsNaviForm.resx">
+      <DependentUpon>ToolsNaviForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCBackUpAndRestore.resx">
+      <DependentUpon>UCBackUpAndRestore.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCCaculateMatching.resx">
+      <DependentUpon>UCCaculateMatching.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCChamberMove.resx">
+      <DependentUpon>UCChamberMove.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ElementTableAtom.resx">
+      <DependentUpon>ElementTableAtom.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCCaculateBits.resx">
+      <DependentUpon>UCCaculateBits.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCCoeeParamIntel.resx">
+      <DependentUpon>UCCoeeParamIntel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCCompanyOthers.resx">
+      <DependentUpon>UCCompanyOthers.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCComponentMotor.resx">
+      <DependentUpon>UCComponentMotor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCComputeIntensity.resx">
+      <DependentUpon>UCComputeIntensity.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDialog.resx">
+      <DependentUpon>FrmDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAbout.resx">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogon.resx">
+      <DependentUpon>FrmLogon.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMeasureResult.resx">
+      <DependentUpon>FrmMeasureResult.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMeasureSetting.resx">
+      <DependentUpon>FrmMeasureSetting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSampleInfo.resx">
+      <DependentUpon>FrmSampleInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSelectLayer.resx">
+      <DependentUpon>FrmSelectLayer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSetAdjustPointsDistance.resx">
+      <DependentUpon>FrmSetAdjustPointsDistance.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStatisticsResult.resx">
+      <DependentUpon>FrmStatisticsResult.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewWorkSpec.resx">
+      <DependentUpon>NewWorkSpec.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCAnalysisParam.resx">
+      <DependentUpon>UCAnalysisParam.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCBasicControl.resx">
+      <DependentUpon>UCBasicControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCCalcResolution.resx">
+      <DependentUpon>UCCalcResolution.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCCoeeParam.resx">
+      <DependentUpon>UCCoeeParam.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCondition.resx">
+      <DependentUpon>FrmCondition.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDevice.resx">
+      <DependentUpon>FrmDevice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmElementTable.resx">
+      <DependentUpon>FrmElementTable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUser.resx">
+      <DependentUpon>FrmUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MatchForm.resx">
+      <DependentUpon>MatchForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectSample.resx">
+      <DependentUpon>SelectSample.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCCreateTitle.resx">
+      <DependentUpon>UCCreateTitle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCCurveImportParams.resx">
+      <DependentUpon>UCCurveImportParams.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCCustomStandard.resx">
+      <DependentUpon>UCCustomStandard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCEditData.resx">
+      <DependentUpon>UCEditData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCExpunction.resx">
+      <DependentUpon>UCExpunction.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCGainSetFor3000.resx">
+      <DependentUpon>UCGainSetFor3000.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCHistoryRecord.resx">
+      <DependentUpon>UCHistoryRecord.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcInCalibrate.resx">
+      <DependentUpon>UcInCalibrate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCIPSetting.resx">
+      <DependentUpon>UCIPSetting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCLanguage.resx">
+      <DependentUpon>UCLanguage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCMoveNetWorkFun.resx">
+      <DependentUpon>UCMoveNetWorkFun.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCMoveWorksStation.resx">
+      <DependentUpon>UCMoveWorksStation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCNitonAlloyGrade.resx">
+      <DependentUpon>UCNitonAlloyGrade.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCNodeNameOrPath.resx">
+      <DependentUpon>UCNodeNameOrPath.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCOtherInfo.resx">
+      <DependentUpon>UCOtherInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCOtherInfoSet.resx">
+      <DependentUpon>UCOtherInfoSet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCParamsSetting.resx">
+      <DependentUpon>UCParamsSetting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCPipeTime.resx">
+      <DependentUpon>UCPipeTime.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCPortraitMotor.resx">
+      <DependentUpon>UCPortraitMotor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCPreHeatParams.resx">
+      <DependentUpon>UCPreHeatParams.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCPureElementsTable.resx">
+      <DependentUpon>UCPureElementsTable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCPWDLock.resx">
+      <DependentUpon>UCPWDLock.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCQualitative.resx">
+      <DependentUpon>UCQualitative.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCQualityResult.resx">
+      <DependentUpon>UCQualityResult.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCRef.resx">
+      <DependentUpon>UCRef.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCCalcIntensity.resx">
+      <DependentUpon>UCCalcIntensity.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCCurve.resx">
+      <DependentUpon>UCCurve.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCCustomField.resx">
+      <DependentUpon>UCCustomField.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCElement.resx">
+      <DependentUpon>UCElement.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCOptimization.resx">
+      <DependentUpon>UCOptimization.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCReportPath.resx">
+      <DependentUpon>UCReportPath.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCResolveParams.resx">
+      <DependentUpon>UCResolveParams.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCSelectSpecType.resx">
+      <DependentUpon>UCSelectSpecType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCSels.resx">
+      <DependentUpon>UCSels.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCShape.resx">
+      <DependentUpon>UCShape.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCSmartGraphic.resx">
+      <DependentUpon>UCSmartGraphic.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCSpecifications.resx">
+      <DependentUpon>UCSpecifications.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCStatusInfo.resx">
+      <DependentUpon>UCStatusInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCStyle.resx">
+      <DependentUpon>UCStyle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCSupplier.resx">
+      <DependentUpon>UCSupplier.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCSurfaceSource.resx">
+      <DependentUpon>UCSurfaceSource.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCSysConfig.resx">
+      <DependentUpon>UCSysConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCSysConfigBackUp.resx">
+      <DependentUpon>UCSysConfigBackUp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCUserConfigParams.resx">
+      <DependentUpon>UCUserConfigParams.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCVirtualSelect.resx">
+      <DependentUpon>UCVirtualSelect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCWarningSettings.resx">
+      <DependentUpon>UCWarningSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCWorkCurveMatch.resx">
+      <DependentUpon>UCWorkCurveMatch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCWorkRegion.resx">
+      <DependentUpon>UCWorkRegion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCWorkRegionSetting.resx">
+      <DependentUpon>UCWorkRegionSetting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCXYZMotor.resx">
+      <DependentUpon>UCXYZMotor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIConfig.resx">
+      <DependentUpon>UIConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCHistoryRecordContinuous.resx">
+      <DependentUpon>UCHistoryRecordContinuous.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCHistoryRecordContinuousList.resx">
+      <DependentUpon>UCHistoryRecordContinuousList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCurveNewName.resx">
+      <DependentUpon>FrmCurveNewName.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SelectSample.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectSample.Designer.cs">
+      <DependentUpon>SelectSample.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCCreateTitle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCCreateTitle.Designer.cs">
+      <DependentUpon>UCCreateTitle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCCurveImportParams.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCCurveImportParams.Designer.cs">
+      <DependentUpon>UCCurveImportParams.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCCustomStandard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCCustomStandard.Designer.cs">
+      <DependentUpon>UCCustomStandard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCExpunction.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCExpunction.Designer.cs">
+      <DependentUpon>UCExpunction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCGainSetFor3000.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCGainSetFor3000.Designer.cs">
+      <DependentUpon>UCGainSetFor3000.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCHistoryRecord.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCHistoryRecord.Designer.cs">
+      <DependentUpon>UCHistoryRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcInCalibrate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcInCalibrate.Designer.cs">
+      <DependentUpon>UcInCalibrate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCIPSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCIPSetting.Designer.cs">
+      <DependentUpon>UCIPSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCLanguage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCLanguage.Designer.cs">
+      <DependentUpon>UCLanguage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCMoveNetWorkFun.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCMoveNetWorkFun.Designer.cs">
+      <DependentUpon>UCMoveNetWorkFun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCMoveWorksStation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCMoveWorksStation.Designer.cs">
+      <DependentUpon>UCMoveWorksStation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCNitonAlloyGrade.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCNitonAlloyGrade.Designer.cs">
+      <DependentUpon>UCNitonAlloyGrade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCNodeNameOrPath.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCNodeNameOrPath.Designer.cs">
+      <DependentUpon>UCNodeNameOrPath.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCOtherInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCOtherInfo.Designer.cs">
+      <DependentUpon>UCOtherInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCOtherInfoSet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCOtherInfoSet.Designer.cs">
+      <DependentUpon>UCOtherInfoSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCParamsSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCParamsSetting.Designer.cs">
+      <DependentUpon>UCParamsSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCPipeTime.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCPipeTime.Designer.cs">
+      <DependentUpon>UCPipeTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCPortraitMotor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCPortraitMotor.Designer.cs">
+      <DependentUpon>UCPortraitMotor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCPreHeatParams.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCPreHeatParams.Designer.cs">
+      <DependentUpon>UCPreHeatParams.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCPureElementsTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCPureElementsTable.Designer.cs">
+      <DependentUpon>UCPureElementsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCPWDLock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCPWDLock.Designer.cs">
+      <DependentUpon>UCPWDLock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCQualitative.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCQualitative.designer.cs">
+      <DependentUpon>UCQualitative.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCQualityResult.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCQualityResult.Designer.cs">
+      <DependentUpon>UCQualityResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCRef.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCRef.Designer.cs">
+      <DependentUpon>UCRef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCCalcIntensity.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCCalcIntensity.Designer.cs">
+      <DependentUpon>UCCalcIntensity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCCurve.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCCurve.Designer.cs">
+      <DependentUpon>UCCurve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCCustomField.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCCustomField.Designer.cs">
+      <DependentUpon>UCCustomField.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCEditData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCEditData.Designer.cs">
+      <DependentUpon>UCEditData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCElement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCElement.Designer.cs">
+      <DependentUpon>UCElement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCOptimization.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCOptimization.Designer.cs">
+      <DependentUpon>UCOptimization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCReportPath.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCReportPath.Designer.cs">
+      <DependentUpon>UCReportPath.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCResolveParams.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCResolveParams.Designer.cs">
+      <DependentUpon>UCResolveParams.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCSelectSpecType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCSelectSpecType.Designer.cs">
+      <DependentUpon>UCSelectSpecType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCSels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UCSels.designer.cs">
+      <DependentUpon>UCSels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCShape.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCShape.Designer.cs">
+      <DependentUpon>UCShape.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCSmartGraphic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCSmartGraphic.Designer.cs">
+      <DependentUpon>UCSmartGraphic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCSpecifications.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCSpecifications.Designer.cs">
+      <DependentUpon>UCSpecifications.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCStatusInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCStatusInfo.Designer.cs">
+      <DependentUpon>UCStatusInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCStyle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCStyle.Designer.cs">
+      <DependentUpon>UCStyle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCSupplier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCSupplier.Designer.cs">
+      <DependentUpon>UCSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCSurfaceSource.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCSurfaceSource.Designer.cs">
+      <DependentUpon>UCSurfaceSource.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCSysConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCSysConfig.Designer.cs">
+      <DependentUpon>UCSysConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCSysConfigBackUp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCSysConfigBackUp.Designer.cs">
+      <DependentUpon>UCSysConfigBackUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCUserConfigParams.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCUserConfigParams.Designer.cs">
+      <DependentUpon>UCUserConfigParams.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCVirtualSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCVirtualSelect.Designer.cs">
+      <DependentUpon>UCVirtualSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCWarningSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCWarningSettings.Designer.cs">
+      <DependentUpon>UCWarningSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCWorkCurveMatch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCWorkCurveMatch.Designer.cs">
+      <DependentUpon>UCWorkCurveMatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCWorkRegion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCWorkRegion.Designer.cs">
+      <DependentUpon>UCWorkRegion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCWorkRegionSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCWorkRegionSetting.Designer.cs">
+      <DependentUpon>UCWorkRegionSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCXYZMotor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCXYZMotor.Designer.cs">
+      <DependentUpon>UCXYZMotor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIConfig.Designer.cs">
+      <DependentUpon>UIConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCHistoryRecordContinuous.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCHistoryRecordContinuous.Designer.cs">
+      <DependentUpon>UCHistoryRecordContinuous.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCHistoryRecordContinuousList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCHistoryRecordContinuousList.Designer.cs">
+      <DependentUpon>UCHistoryRecordContinuousList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCurveNewName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCurveNewName.Designer.cs">
+      <DependentUpon>FrmCurveNewName.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookmark.png" />
+    <None Include="Resources\start.png" />
+    <None Include="Resources\stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookmark-big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wizard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wizard-big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tou.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tou1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RoHS.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Default.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tool-blue.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tool-blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\02a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sea.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FLD302.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xsimple_009_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xsimple_004_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\03a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lephone.Data\Lephone.Data.csproj">
+      <Project>{25AFD300-493A-4553-B4DC-129D3A9022A8}</Project>
+      <Name>Lephone.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lephone.Util\Lephone.Util.csproj">
+      <Project>{F53E89FC-F364-4C7D-A20A-CACFBF11C196}</Project>
+      <Name>Lephone.Util</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Print\Skyray.Print.csproj">
+      <Project>{B3BE623A-89B8-47C3-AF01-FF397F3DE2B5}</Project>
+      <Name>Skyray.Print</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Skyray.API\Skyray.API.csproj">
+      <Project>{535A288C-29B8-4E94-8815-1F56F7638744}</Project>
+      <Name>Skyray.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Skyray.Camera\Skyray.Camera.csproj">
+      <Project>{D78C9279-92BF-480B-A75D-CA87B66B0924}</Project>
+      <Name>Skyray.Camera</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Skyray.Controls.Extension\Skyray.Controls.Extension.csproj">
+      <Project>{CBD3B4E5-04C5-4B96-8F90-9DBC482D3429}</Project>
+      <Name>Skyray.Controls.Extension</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Skyray.Controls\Skyray.Controls.csproj">
+      <Project>{B2A42E4A-4931-4FC0-AD61-FFB550695AB9}</Project>
+      <Name>Skyray.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Skyray.EDX.Common\Skyray.EDX.Common.csproj">
+      <Project>{567427A0-5723-4D03-BEAE-27CCD2843C04}</Project>
+      <Name>Skyray.EDX.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Skyray.EDXRFLibrary\Skyray.EDXRFLibrary.csproj">
+      <Project>{3BB2CC20-8998-400E-A002-EF5D202CA4DF}</Project>
+      <Name>Skyray.EDXRFLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Skyray.Language\Skyray.Language.csproj">
+      <Project>{F81A88F3-6B6E-44F0-84B6-504F5B4567D1}</Project>
+      <Name>Skyray.Language</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Continue.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Start.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stop.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\go-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bottom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StartTest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StopTest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Active.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Deavtive.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Resources\新LOGO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\退出24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pingzi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ssb.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eed.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paau.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue_up.png" />
+    <None Include="Resources\blue_down.png" />
+    <Content Include="Resources\Caculate.png" />
+    <Content Include="Resources\EditMatch.png" />
+    <None Include="Resources\eyes.png" />
+    <Content Include="Resources\OpenCurve.png" />
+    <Content Include="Resources\OpenSpec.png" />
+    <None Include="Resources\searcheyes.png" />
+    <Content Include="Resources\SettingTime.png" />
+    <None Include="Resources\testing.png" />
+    <None Include="Resources\testing.bmp" />
+    <None Include="Resources\停止.png" />
+    <None Include="Resources\播放绿.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="XRFNetLib">
+      <Guid>{F01659FE-0955-4240-B805-D9D371D407E2}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

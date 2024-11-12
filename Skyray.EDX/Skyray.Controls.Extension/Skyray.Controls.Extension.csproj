@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CBD3B4E5-04C5-4B96-8F90-9DBC482D3429}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Skyray.Controls.Extension</RootNamespace>
+    <AssemblyName>Skyray.Controls.Extension</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>..\..\..\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Lephone.Data, Version=3.9.3759.27912, Culture=neutral, PublicKeyToken=d77bbd87a80780b6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\EXE\Lephone.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Lephone.Util, Version=3.9.0.0, Culture=neutral, PublicKeyToken=3eacc2a29b11f14a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZedGraph, Version=5.1.5.17623, Culture=neutral, PublicKeyToken=cd91e0d261d1744a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\EXE\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TrendChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XRFChart\Boundary.cs" />
+    <Compile Include="XRFChart\Element.cs" />
+    <Compile Include="XRFChart\ElementLine.cs" />
+    <Compile Include="XRFChart\ElementTableAtom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XRFChart\ElementTableAtom.Designer.cs">
+      <DependentUpon>ElementTableAtom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XRFChart\FrmAddPeak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XRFChart\FrmAddPeak.Designer.cs">
+      <DependentUpon>FrmAddPeak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XRFChart\Guass.cs" />
+    <Compile Include="XRFChart\SpecData.cs" />
+    <Compile Include="XRFChart\SpecSplitInfo.cs" />
+    <Compile Include="XRFChart\XRFChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XRFChart\XRFInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GripNormal.png" />
+    <None Include="Resources\ScrollBarArrowDown.png" />
+    <None Include="Resources\blue_up.png" />
+    <None Include="Resources\blue_down.png" />
+    <None Include="Resources\blue_left.png" />
+    <None Include="Resources\blue_right.png" />
+    <None Include="Resources\ComputeMatching.PNG" />
+    <None Include="Resources\radiation1.png" />
+    <None Include="Resources\radiation2.png" />
+    <Content Include="XRFChart\ElementTable.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrendChart.resx">
+      <DependentUpon>TrendChart.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XRFChart\ElementTableAtom.resx">
+      <DependentUpon>ElementTableAtom.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XRFChart\FrmAddPeak.resx">
+      <DependentUpon>FrmAddPeak.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XRFChart\XRFChart.resx">
+      <DependentUpon>XRFChart.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Skyray.API\Skyray.API.csproj">
+      <Project>{535A288C-29B8-4E94-8815-1F56F7638744}</Project>
+      <Name>Skyray.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Skyray.Controls\Skyray.Controls.csproj">
+      <Project>{B2A42E4A-4931-4FC0-AD61-FFB550695AB9}</Project>
+      <Name>Skyray.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Skyray.EDXRFLibrary\Skyray.EDXRFLibrary.csproj">
+      <Project>{3BB2CC20-8998-400E-A002-EF5D202CA4DF}</Project>
+      <Name>Skyray.EDXRFLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Skyray.Language\Skyray.Language.csproj">
+      <Project>{F81A88F3-6B6E-44F0-84B6-504F5B4567D1}</Project>
+      <Name>Skyray.Language</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,4 @@
+﻿#是否开始录制,放Bool字串
+Record : false
+#视频文件夹
+OutputDirectory : D:/Video/2017-08-23/172259743/

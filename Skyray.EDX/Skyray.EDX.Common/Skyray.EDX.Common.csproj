@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{567427A0-5723-4D03-BEAE-27CCD2843C04}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Skyray.EDX.Common</RootNamespace>
+    <AssemblyName>Skyray.EDX.Common</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>..\..\..\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells, Version=8.1.1.0, Culture=neutral, PublicKeyToken=00725b1ceb58d0a9, processorArchitecture=MSIL" />
+    <Reference Include="FtdAdapter, Version=1.11.0.0, Culture=neutral, PublicKeyToken=b5aba55fcbc8d946, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NModbus.1.11.0.0\lib\FtdAdapter.dll</HintPath>
+    </Reference>
+    <Reference Include="HardwareDog, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <HintPath>..\..\..\Release\HardwareDog.dll</HintPath>
+    </Reference>
+    <Reference Include="InTheHand.Net.Personal, Version=2.3.0.0, Culture=neutral, PublicKeyToken=ea38caa273134499, processorArchitecture=MSIL" />
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\EXE\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Modbus, Version=1.11.0.0, Culture=neutral, PublicKeyToken=b5aba55fcbc8d946, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NModbus.1.11.0.0\lib\Modbus.dll</HintPath>
+    </Reference>
+    <Reference Include="Modbus.Extensions, Version=1.11.0.0, Culture=neutral, PublicKeyToken=b5aba55fcbc8d946, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NModbus.1.11.0.0\lib\Modbus.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="NewLicense, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86" />
+    <Reference Include="Newtonsoft.Json, Version=3.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL" />
+    <Reference Include="Skyray.API, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Skyray.Controls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Skyray.Key, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.SQLite, Version=1.0.66.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Unme.Common, Version=1.1.0.0, Culture=neutral, PublicKeyToken=da57c01ae4598fdd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NModbus.1.11.0.0\lib\Unme.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ZedGraph, Version=5.1.5.17623, Culture=neutral, PublicKeyToken=cd91e0d261d1744a, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppStyle.cs" />
+    <Compile Include="App\EDXRFImplement.cs" />
+    <Compile Include="App\FPThickImplement.cs" />
+    <Compile Include="App\RoHS3Implement.cs" />
+    <Compile Include="App\ROHSImplement.cs" />
+    <Compile Include="App\Thick800AImplement.cs" />
+    <Compile Include="App\XRFDelphiImp.cs" />
+    <Compile Include="App\XRFImplement.cs" />
+    <Compile Include="Basic Common\Alert.cs" />
+    <Compile Include="Basic Common\ConstParam.cs" />
+    <Compile Include="Basic Common\DBHelper.cs" />
+    <Compile Include="ClassExtender.cs" />
+    <Compile Include="Component\BackGroundHelper.cs" />
+    <Compile Include="Component\BlueTeethImplement.cs" />
+    <Compile Include="Component\CameraRefMotor.cs" />
+    <Compile Include="Component\CommInterface.cs" />
+    <Compile Include="Component\CommTransport.cs" />
+    <Compile Include="Component\COMThreadManager.cs" />
+    <Compile Include="Component\DataStruct.cs" />
+    <Compile Include="Component\DemoImplement.cs" />
+    <Compile Include="Component\DemoPort.cs" />
+    <Compile Include="Component\DeviceInterface.cs" />
+    <Compile Include="Component\DeviceMeasure.cs" />
+    <Compile Include="Component\DLLWrapper.cs" />
+    <Compile Include="Component\Dogy.cs" />
+    <Compile Include="Component\Dp5Device.cs" />
+    <Compile Include="Component\Dp5DeviceInplement.cs" />
+    <Compile Include="Component\DP5FastNetDevice.cs" />
+    <Compile Include="Component\DP5FastProtocol.cs" />
+    <Compile Include="Component\Dp5Interface.cs" />
+    <Compile Include="Component\DppApi.cs" />
+    <Compile Include="Component\ElementSpectrumDataBase.cs" />
+    <Compile Include="Component\GlobalClass.cs" />
+    <Compile Include="Component\Matching.cs" />
+    <Compile Include="Component\Motor.cs" />
+    <Compile Include="Component\MotorAdvance.cs" />
+    <Compile Include="Component\MotorHelper.cs" />
+    <Compile Include="Component\MotorOperator.cs" />
+    <Compile Include="Component\NetPort.cs" />
+    <Compile Include="Component\NetPortImplement.cs" />
+    <Compile Include="Component\NewNetPortProtocol.cs" />
+    <Compile Include="Component\ParallelDeviceImplement.cs" />
+    <Compile Include="Component\ParallelPort.cs" />
+    <Compile Include="Component\Port.cs" />
+    <Compile Include="Component\QualeOperation.cs" />
+    <Compile Include="Component\Resolve.cs" />
+    <Compile Include="Component\RhMatch.cs" />
+    <Compile Include="Component\SerialDevice.cs" />
+    <Compile Include="Component\SerialPortEvents.cs" />
+    <Compile Include="Component\SerialPortException.cs" />
+    <Compile Include="Component\SerialPortExecute.cs" />
+    <Compile Include="Component\SpecMessage.cs" />
+    <Compile Include="Component\Super1050Port.cs" />
+    <Compile Include="Component\Super2050Port.cs" />
+    <Compile Include="Component\Super2400Port.cs" />
+    <Compile Include="Component\ThreadSafeQueue.cs" />
+    <Compile Include="Component\UsbDeviceInplement.cs" />
+    <Compile Include="Component\UsbPort.cs" />
+    <Compile Include="Component\UsbPortDelegate.cs" />
+    <Compile Include="Component\VacuumAdjust.cs" />
+    <Compile Include="Component\VacuumPump.cs" />
+    <Compile Include="Component\XMotor.cs" />
+    <Compile Include="Component\XRayTube.cs" />
+    <Compile Include="Component\YMotor.cs" />
+    <Compile Include="Component\ZMotor.cs" />
+    <Compile Include="Component\日本判定标准\JapanStyle.cs" />
+    <Compile Include="Component\日本判定标准\ResultStandard.cs" />
+    <Compile Include="Component\日本判定标准\StandardService.cs" />
+    <Compile Include="CompressibleImage.cs" />
+    <Compile Include="ContainerObject.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlFactory.cs" />
+    <Compile Include="Controls\CtrlHelper.cs" />
+    <Compile Include="Controls\LayoutSource.cs" />
+    <Compile Include="Basic Common\FormHelper.cs" />
+    <Compile Include="Basic Common\FuncHelper.cs" />
+    <Compile Include="Basic Common\GP.cs" />
+    <Compile Include="Basic Common\Info.cs" />
+    <Compile Include="Basic Common\Log.cs" />
+    <Compile Include="CSharpConvert\FPThickReadFile.cs" />
+    <Compile Include="CSharpConvert\ROHSReadFile.cs" />
+    <Compile Include="CSharpConvert\XRFReadFile.cs" />
+    <Compile Include="DataBaseHelper.cs" />
+    <Compile Include="datagridviewCheckbox\CheckBoxClickedHandler.cs" />
+    <Compile Include="datagridviewCheckbox\datagridviewCheckboxHeaderEventArgs.cs" />
+    <Compile Include="DataInputHelper.cs" />
+    <Compile Include="Default.cs" />
+    <Compile Include="DelphiConvert\ROHS3.cs" />
+    <Compile Include="DelphiConvert\Thick800A.cs" />
+    <Compile Include="DelphiConvert\XRF.cs" />
+    <Compile Include="DevClasses.cs" />
+    <Compile Include="devnetcache\Data.cs" />
+    <Compile Include="devnetcache\DevCache.cs" />
+    <Compile Include="devnetcache\FileMap.cs" />
+    <Compile Include="HotKey.cs" />
+    <Compile Include="IAccessControl\IEDXRF.cs" />
+    <Compile Include="IAccessControl\IRefreshFillInfo.cs" />
+    <Compile Include="IAccessControl\IRohsAccess.cs" />
+    <Compile Include="IAccessControl\IThickAccess.cs" />
+    <Compile Include="IApplication\IDevice.cs" />
+    <Compile Include="IApplication\IFactory.cs" />
+    <Compile Include="IApplication\ISpectrums.cs" />
+    <Compile Include="IApplication\IWorkCurve.cs" />
+    <Compile Include="IExcelFormat\IExcelFormat.cs" />
+    <Compile Include="ImputData.cs" />
+    <Compile Include="Library\DephiHelper.cs" />
+    <Compile Include="Library\DllExport.cs" />
+    <Compile Include="Library\FileFoundHelper.cs" />
+    <Compile Include="Library\ReadHelper.cs" />
+    <Compile Include="Library\XmlReader.cs" />
+    <Compile Include="libSerialize.cs" />
+    <Compile Include="MathFunc.cs" />
+    <Compile Include="DragDropMenuItem.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RangeInfo.cs" />
+    <Compile Include="RangeSetting.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReportHelper\ColorList.cs" />
+    <Compile Include="ReportHelper\ContentRang.cs" />
+    <Compile Include="ReportHelper\ExcelTemplateParams.cs" />
+    <Compile Include="ReportHelper\HistoryStatistics.cs" />
+    <Compile Include="ReportHelper\Report.cs" />
+    <Compile Include="ReportHelper\Reports\BengalReport.cs" />
+    <Compile Include="ReportHelper\Reports\LYReport.cs" />
+    <Compile Include="ReportTemplateHelper.cs" />
+    <Compile Include="ResourceHelper\BackupHelper.cs" />
+    <Compile Include="ResourceHelper\ExpressionHelper.cs" />
+    <Compile Include="ResourceHelper\TabControlHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RoHS3DataInput.cs" />
+    <Compile Include="SaveSerialize.cs" />
+    <Compile Include="ScanQRCode.cs" />
+    <Compile Include="SelfCheckObject.cs" />
+    <Compile Include="SerializeObj.cs" />
+    <Compile Include="SpecDrawing.cs" />
+    <Compile Include="StyleChange.cs" />
+    <Compile Include="TargetDic.cs" />
+    <Compile Include="TestDevicePassedParams.cs" />
+    <Compile Include="ToolsInterface\MenuConfig.cs" />
+    <Compile Include="Controls\ModelEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TotalAnalysisReport.cs" />
+    <Compile Include="TransferClass.cs" />
+    <Compile Include="UCHelper.cs" />
+    <Compile Include="UIHelper\DataConvertHelper.cs" />
+    <Compile Include="UIHelper\GridBinder.cs" />
+    <Compile Include="UIHelper\StatusHelper.cs" />
+    <Compile Include="UIHelper\ValidateHelper.cs" />
+    <Compile Include="UIHelper\XmlHelper.cs" />
+    <Compile Include="UserDataInitialization.cs" />
+    <Compile Include="vtExtender.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lephone.Data\Lephone.Data.csproj">
+      <Project>{25AFD300-493A-4553-B4DC-129D3A9022A8}</Project>
+      <Name>Lephone.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lephone.Util\Lephone.Util.csproj">
+      <Project>{F53E89FC-F364-4C7D-A20A-CACFBF11C196}</Project>
+      <Name>Lephone.Util</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Skyray.Controls.Extension\Skyray.Controls.Extension.csproj">
+      <Project>{CBD3B4E5-04C5-4B96-8F90-9DBC482D3429}</Project>
+      <Name>Skyray.Controls.Extension</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Skyray.EDXRFLibrary\Skyray.EDXRFLibrary.csproj">
+      <Project>{3BB2CC20-8998-400E-A002-EF5D202CA4DF}</Project>
+      <Name>Skyray.EDXRFLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Skyray.Language\Skyray.Language.csproj">
+      <Project>{F81A88F3-6B6E-44F0-84B6-504F5B4567D1}</Project>
+      <Name>Skyray.Language</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookmark-big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wizard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wizard-big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Parameter.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="XRFNetLib">
+      <Guid>{F01659FE-0955-4240-B805-D9D371D407E2}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
