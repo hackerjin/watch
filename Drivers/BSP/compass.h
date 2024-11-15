@@ -3,7 +3,6 @@
 
 #include <stdint.h>
  
-//LSM303DLH ¼Ä´æÆ÷¶¨Òå
 //ÂÞÅÌ
 #define	LSM303_CRA_REG_M					0x00	//RW
 #define	LSM303_CRB_REG_M					0x01	//RW
@@ -53,13 +52,13 @@
 
 unsigned char compass_init(void);
 
-void LSM303DLH_Sleep(void);
-void LSM303DLH_Wakeup(void);
+void compass_sleep(void);
+void compass_wakeup(void);
 
-void LSM303_ReadAcceleration(int16_t *Xa, int16_t *Ya, int16_t *Za);
-void LSM303_ReadMagnetic(int16_t *Xm, int16_t *Ym, int16_t *Zm);
+void compass_readacceleration(int16_t *Xa, int16_t *Ya, int16_t *Za);
+void compass_readmagnetic(int16_t *Xm, int16_t *Ym, int16_t *Zm);
 
 
-float Azimuth_Calculate(int16_t Xa, int16_t Ya, int16_t Za, int16_t Xm, int16_t Ym, int16_t Zm);
+float azimuth_calculate(int16_t Xa, int16_t Ya, int16_t Za, int16_t Xm, int16_t Ym, int16_t Zm);
 
-#endif /*_LSM303DLH_H_*/
+#endif

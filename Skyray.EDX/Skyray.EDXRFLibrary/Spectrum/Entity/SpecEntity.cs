@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using System.IO;
 namespace Skyray.EDXRFLibrary.Spectrum
 {
     [Serializable]
@@ -43,7 +43,6 @@ namespace Skyray.EDXRFLibrary.Spectrum
 #else
 
 
-        public string specData;
 
         public string SpecData
         {
@@ -51,11 +50,6 @@ namespace Skyray.EDXRFLibrary.Spectrum
             get;
             set;
 
-
-            //int[] intSpec = Helper.ToInts(value);
-            //intSpec = changeSpecData(intSpec, 2f);
-            //string[] strs = Array.ConvertAll(intSpec, element => element.ToString());
-            //specData = string.Join(",", strs);
 
 
         }

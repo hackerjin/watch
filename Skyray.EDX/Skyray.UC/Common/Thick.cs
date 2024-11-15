@@ -961,6 +961,7 @@ namespace Skyray.UC
                 }
                 if (WorkCurveHelper.IsSaveSpecData)
                 {
+                    /*
                     string filePath = "";
                     if (specList.Specs[0].SpecData == "")
                         filePath = "谱空记录.txt";
@@ -992,7 +993,7 @@ namespace Skyray.UC
                     catch
                     {
                     }
-
+                    */
                     this.specList.ImageShow = true;
                     WorkCurveHelper.DataAccess.Save(this.specList);
                     

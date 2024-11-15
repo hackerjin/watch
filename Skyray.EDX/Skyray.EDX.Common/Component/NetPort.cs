@@ -101,16 +101,16 @@ namespace Skyray.EDX.Common.Component
                         netWork.Connect(ref byteIp[0], uPort);
                         RecordInfo("Connect成功！");
 
+                       
                         //此处为针对edxv机器上的近景摄像头的特殊处理，对其他机型没有影响
                         Thread.Sleep(500);
-                        netWork.ReduceLowSmallCameraLight();
-                        Thread.Sleep(100);
                         netWork.CloseSmallCamera();
-                        Thread.Sleep(100);
+                        Thread.Sleep(2000);
                         netWork.OpenSmallCamera();
-                        Thread.Sleep(500);
+                        Thread.Sleep(1200);
                         netWork.CloseSmallCamera();
-
+                        
+                       
 
                     });
                     

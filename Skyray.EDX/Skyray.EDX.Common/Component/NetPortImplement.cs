@@ -731,7 +731,7 @@ namespace Skyray.EDX.Common.Component
                         {
                             using (StreamWriter sw = new StreamWriter(fileStream))
                             {
-                                // sw.WriteLine(status + "\r\n" + newNetPortProtocol.GetSpectrumString() + "\r\n" + DateTime.Now.ToString() + "\r\n");
+                                
                                 sw.WriteLine(status + DateTime.Now.ToString() + "\r\n");
                            
                             }
@@ -1050,21 +1050,10 @@ namespace Skyray.EDX.Common.Component
 
 
 
-            //if (WorkCurveHelper.DeviceCurrent.HasMotorY1 && IsSpin)
-            //{
-            //    port.MotorControl(WorkCurveHelper.DeviceCurrent.MotorY1Code, WorkCurveHelper.DeviceCurrent.MotorY1Direct, 0, true, WorkCurveHelper.DeviceCurrent.MotorY1Speed);
-            //    Thread.Sleep(500);
-            //}
-
-            //for (int i = 0; i < DataCopy.Length; i++)
-            //{
-            //    if (usedTime - Time1 == 0)
-            //        break;
-            //    double newChannelData = (DataCopy[i] - Decre1[i]) * (usedTime / (usedTime - Time1));
-            //    DataCopy[i] = (int)Math.Round(newChannelData, MidpointRounding.AwayFromZero);
-            //}
+       
             Spec.SpecData = TabControlHelper.ConvertArrayToString(DataCopy);
 
+            /*
             using (FileStream fileStream = new FileStream(Application.StartupPath + @"\newdp5Data.txt", FileMode.Append))
             {
                 using (StreamWriter sw = new StreamWriter(fileStream))
@@ -1074,6 +1063,7 @@ namespace Skyray.EDX.Common.Component
                 }
             }
 
+            */
             Spec.UsedTime = usedTime;
 
             if (WorkCurveHelper.startDoing == 1)

@@ -162,6 +162,56 @@ namespace Skyray.EDX.Common.App
 
         #endregion
 
+
+        public int[] changeSpecData(int[] data, float coeff)
+        {
+            coeff = Math.Abs(coeff);
+            if (coeff == 1)
+                return data;
+
+            int[] newData = (int[])data.Clone();
+
+            //压缩
+            if (coeff > 1)
+            {
+                int splitIndex = (int)(data.Length / coeff);
+                for (int i = 0; i < data.Length; i++)
+                {
+                    if (i < splitIndex)
+                    {
+                        int lowIndex = (int)(i * coeff);
+                        int highIndex = lowIndex + 1;
+                        newData[i] = (int)(data[lowIndex] + (highIndex < data.Length ? (data[highIndex] - data[lowIndex]) * (i * coeff - lowIndex) : 0));
+
+                    }
+                    else
+                        newData[i] = 0;
+                }
+            }
+            //拉伸
+            else
+            {
+                for (int i = 0; i < data.Length; i++)
+                {
+                    int lowIndex = (int)(i * coeff);
+                    int highIndex = lowIndex + 1;
+                    newData[i] = (int)(data[lowIndex] + (highIndex < data.Length ? (data[highIndex] - data[lowIndex]) * (i * coeff - lowIndex) : 0));
+                }
+            }
+
+            return newData;
+        }
+
+        public string changeData(string value)
+        {
+            int[] intSpec = Helper.ToInts(value);
+            intSpec = changeSpecData(intSpec, 1.1f);
+            string[] strs = Array.ConvertAll(intSpec, element => element.ToString());
+            string specData = string.Join(",", strs);
+            return specData;
+        }
+
+
         #region IFactory 成员
         public SpecListEntity LoadSpecFactory(string fileName)
         {
@@ -192,8 +242,8 @@ namespace Skyray.EDX.Common.App
                 {
                     str += Convert.ToInt32(dataStr[i]) + ",";
                 }
-                spec.SpecData = str;
-                //spec.IsSmooth = true;
+                spec.SpecData =str;
+           
                 spec.TubCurrent = deviceParams.TubCurrent;
                 spec.TubVoltage = deviceParams.TubVoltage;
                 spec.Name = info.Name.Replace(".spe", "");

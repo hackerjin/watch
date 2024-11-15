@@ -25,29 +25,6 @@ unsigned char LSM303_ReadOneReg(unsigned char RegAddr)
 	return dat;
 }
 
-//连续读取多个寄存器的值
-void LSM303_ReadMultiReg(unsigned char RegAddr, unsigned char RegNum, unsigned char DataBuff[])
-{
-	unsigned char i;
-	unsigned char SlaveAddr = (RegAddr>0x19)?LSM303_SlaveAddr_A:LSM303_SlaveAddr_M;
-	for(i=0;i<RegNum;i++)
-	{
-		DataBuff[i] = IIC_Read_One_Byte(&LSM303_bus, SlaveAddr,RegAddr+i);
-	}
-}
-
-/*************************************************************************************************************************
-*function  	:	LSM303_Temp_ReadOneReg()
-*paraments	: RegAddr
-*return     : data readed
-*detail     :	it's for temperature data read
-*************************************************************************************************************************/
-unsigned char LSM303_Temp_ReadOneReg(unsigned char RegAddr)
-{
-	unsigned char dat;
-	dat = IIC_Read_One_Byte(&LSM303_bus, LSM303_SlaveAddr_M,RegAddr);
-	return dat;
-}
 
 /*************************************************************************************************************************
 *function  	:	LSM303_WriteOneReg()
@@ -60,6 +37,19 @@ void LSM303_WriteOneReg(unsigned char RegAddr, unsigned char dat)
 	unsigned char SlaveAddr = (RegAddr>0x19)?LSM303_SlaveAddr_A:LSM303_SlaveAddr_M;
 	IIC_Write_One_Byte(&LSM303_bus, SlaveAddr,RegAddr,dat);
 }
+
+
+//连续读取多个寄存器的值
+void LSM303_ReadMultiReg(unsigned char RegAddr, unsigned char RegNum, unsigned char DataBuff[])
+{
+	unsigned char i;
+	unsigned char SlaveAddr = (RegAddr>0x19)?LSM303_SlaveAddr_A:LSM303_SlaveAddr_M;
+	for(i=0;i<RegNum;i++)
+	{
+		DataBuff[i] = IIC_Read_One_Byte(&LSM303_bus, SlaveAddr,RegAddr+i);
+	}
+}
+
 
 /*************************************************************************************************************************
 *function  	:	LSM303DLH_Init()
